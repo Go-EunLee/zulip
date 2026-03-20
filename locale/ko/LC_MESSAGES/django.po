@@ -84,7 +84,10 @@ msgid ""
 "new users. Please [increase the number of licenses]({billing_page_link}) or "
 "[deactivate inactive users]({deactivate_user_help_page_link}) to allow new "
 "users to join."
-msgstr "Your 조직 has no Zulip 라이선스 remaining 및 can no longer accept new 사용자. Please [increase the number of licenses]({billing_page_link}) or [deactivate inactive users]({deactivate_user_help_page_link}) 으로 allow new 사용자 으로 join."
+msgstr ""
+"귀하의 조직에는 남은 Zulip 라이센스가 없으므로 더 이상 새로운 사용자를 수락할 수 없습니다."
+"Please [increase the number of licenses]({billing_page_link}) or "
+"[deactivate inactive users]({deactivate_user_help_page_link}) 으로 allow new 사용자 으로 join."
 
 #: corporate/lib/registration.py:42
 #, python-brace-format
@@ -166,7 +169,7 @@ msgstr "{last4}로 끝나는 {brand}"
 #: corporate/lib/stripe.py:373
 #, python-brace-format
 msgid "Unknown payment method. Please contact {email}."
-msgstr "알수없는 지불 방법입니다. {email}로 연락해주세요."
+msgstr "알 수 없는 지불 방법입니다. {email}로 연락해주세요."
 
 #: corporate/lib/stripe.py:403
 #, python-brace-format
@@ -557,9 +560,9 @@ msgstr "이메일이 변경되었습니다!"
 msgid ""
 "This confirms that the email address for your Zulip account has changed from "
 "%(old_email_html_tag)s to %(new_email_html_tag)s"
-msgstr "This confirms that the 이메일 주소 에 대한 귀하의 Zulip 계정 has changed from %(old_email_html_tag)s 으로 %(new_email_html_tag)s"
-"이것은 너의 Zulip 계정에 있는 이메일 주소가 변경되었는지 확인한다. from 전 이"
-"메일%(old_email_html_tag)s to 현재 새로운 이메일%(new_email_html_tag)s"
+msgstr ""
+"이것은 너의 Zulip 계정에 있는 이메일 주소가 변경되었는지 확인한다."
+"전 이메일%(old_email_html_tag)s to 현재 새로운 이메일%(new_email_html_tag)s"
 
 #: templates/confirmation/confirm_preregistrationuser.html:5
 #: templates/confirmation/redirect_to_post.html:5
@@ -2139,7 +2142,7 @@ msgstr "This 이메일 does not include 메시지 content because you have chose
 #, fuzzy, python-format
 #| msgid "Please <a href=\"%(login_url)s\">log in</a> with your new password."
 msgid "<a href=\"%(realm_url)s\">Log in</a> to Zulip to catch up."
-msgstr "귀하의 새 비밀번호로 <a href=\"%(login_url)s\">로그인</a>하세요."
+msgstr "귀하의 새 비밀번호로 <a href=\"%(realm_url)s\">로그인</a>하세요."
 
 #: templates/zerver/emails/digest.html:56
 msgid "Unsubscribe from digest emails"
@@ -3643,7 +3646,7 @@ msgstr "Unsupported browser"
 #, fuzzy, python-format
 #| msgid "Presence is not supported for bot users."
 msgid "%(browser_name)s is not supported by Zulip."
-msgstr "현재 상태는 봇 사용자에게는 지원되지 않습니다."
+msgstr "%(browser_name)는 봇 사용자에게는 지원되지 않습니다."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:18
 #, python-format
@@ -4627,7 +4630,7 @@ msgstr "Can't join the 조직: 비밀번호 authentication is not enabled."
 msgid ""
 "Your email address, {email}, is not in one of the domains that are allowed "
 "to register for accounts in this organization."
-msgstr "Your 이메일 주소, {email}, is not 에서 one 의 the domains that are allowed 으로 register 에 대한 계정 에서 this 조직."
+msgstr ""
 "귀하의 이메일 주소인 {email}은 이 조직의 계정에 등록 할 수있는 도메인에 속해 "
 "있지 않습니다."
 
@@ -5721,7 +5724,7 @@ msgstr "You can't send direct 메시지 outside 의 귀하의 조직."
 #, fuzzy, python-brace-format
 #| msgid "{var_name} is too long (limit: {max_length} characters)"
 msgid "Maximum reminder note length: {max_length} characters"
-msgstr "{var_name}이 너무 깁니다 (제한: {max_length} 글자)"
+msgstr "최대 알람 메모 길이 너무 깁니다 (제한: {max_length} 글자)"
 
 #: zerver/lib/reminders.py:50
 #, python-brace-format
@@ -6014,7 +6017,7 @@ msgstr "{var_name} is not a valid hex color code"
 #, fuzzy, python-brace-format
 #| msgid "Invalid emoji name."
 msgid "Invalid {setting_name}"
-msgstr "이모티콘 이름이 유효하지 않습니다."
+msgstr "{setting_name}이 유효하지 않습니다."
 
 #: zerver/lib/upload/__init__.py:47
 msgid "Upload would exceed your organization's upload quota."
