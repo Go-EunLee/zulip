@@ -4441,7 +4441,10 @@ msgid ""
 "\n"
 "* **Old**: {old_setting_description}\n"
 "* **New**: {new_setting_description}\n"
-msgstr "{user} changed the [posting permissions]({help_link}) 에 대한 this 채널:\n\n* **Old**: {old_setting_description}\n* **New**: {new_setting_description}"
+msgstr ""
+"{user} changed the [posting permissions]({help_link}) 에 대한 채널:\n"
+"* **Old**: {old_setting_description}\n"
+"* **New**: {new_setting_description}\n"
 
 #: zerver/actions/streams.py:1543
 #, python-brace-format
@@ -5261,7 +5264,10 @@ msgid ""
 "\n"
 "- Reason: **{report_type}**\n"
 "- Notes:\n"
-msgstr "- Reason: **{report_type}**\n- Notes:"
+msgstr ""
+"\n"
+"- 원인: **{report_type}**\n
+"- Notes:\n"
 
 #: zerver/lib/message_report.py:91
 #, python-brace-format
@@ -5326,7 +5332,11 @@ msgid ""
 "\n"
 "To learn more, check out our [using Zulip for a class guide]"
 "({getting_started_url})!\n"
-msgstr "To learn more, check out our [using Zulip for a class guide]({getting_started_url})!"
+msgstr 
+""
+"\n"
+"자세한 내용은 [using Zulip for a class guide]을 확인하세요."
+"({getting_started_url})!\n"
 
 #: zerver/lib/onboarding.py:95
 #, python-brace-format
@@ -5334,7 +5344,10 @@ msgid ""
 "\n"
 "To learn more, check out our [getting started guide]"
 "({getting_started_url})!\n"
-msgstr "To learn more, check out our [getting started guide]({getting_started_url})!"
+msgstr ""
+"\n"
+"자세한 내용은 [getting started guide]를 확인하세요."
+"({getting_started_url})!\n"
 
 #: zerver/lib/onboarding.py:103
 #, python-brace-format
@@ -5342,7 +5355,10 @@ msgid ""
 "\n"
 "We also have a guide for [setting up Zulip for a class]"
 "({organization_setup_url}).\n"
-msgstr "We also have a 가이드 에 대한 [setting up Zulip for a class]({organization_setup_url})."
+msgstr ""
+"\n"
+"[setting up Zulip for a class] 가이드도 있습니다."
+"({organization_setup_url}).\n"
 
 #: zerver/lib/onboarding.py:107
 #, python-brace-format
@@ -5350,7 +5366,10 @@ msgid ""
 "\n"
 "We also have a guide for [moving your organization to Zulip]"
 "({organization_setup_url}).\n"
-msgstr "We also have a 가이드 에 대한 [moving your organization to Zulip]({organization_setup_url})."
+msgstr ""
+"\n"
+"[moving your organization to Zulip] 가이드도 있습니다."
+"({organization_setup_url}).\n"
 
 #: zerver/lib/onboarding.py:114
 #, python-brace-format
@@ -5359,14 +5378,21 @@ msgid ""
 "Note that this is a [demo organization]({demo_organization_help_url}) and\n"
 "will be **automatically deleted** in 30 days, unless it's [converted into\n"
 "a permanent organization]({convert_demo_organization_help_url}).\n"
-msgstr "Note that this is a [demo organization]({demo_organization_help_url}) and\nwill be **automatically deleted** 에서 30 days, unless it's [converted into\na permanent organization]({convert_demo_organization_help_url})."
+msgstr ""
+"\n"
+"이것은 [demo organization]({demo_organization_help_url}) 이며\n"
+"will be **automatically deleted** 에서 30 days, unless it's [converted into\n""
+"a permanent organization]({convert_demo_organization_help_url}).\n"
 
 #: zerver/lib/onboarding.py:125
 msgid ""
 "\n"
 "I've kicked off some conversations to help you get started. You can find\n"
 "them in your [Inbox](/#inbox).\n"
-msgstr "I've kicked off some conversations 으로 help you get started. You can find\nthem 에서 귀하의 [Inbox](/#inbox)."
+msgstr ""
+"\n"
+"당신이 시작하는 데 도움이 되도록 몇 가지 대화를 시작했습니다. 해당 대화는\n"
+"[Inbox](/#inbox)에서 찾을 수 있습니다.\n"
 
 #: zerver/lib/onboarding.py:130
 #, python-brace-format
@@ -5374,7 +5400,10 @@ msgid ""
 "\n"
 "You can always come back to the [Welcome to Zulip video]"
 "({navigation_tour_video_url}) for a quick app overview.\n"
-msgstr "You can always come back 으로 the [Welcome to Zulip video]({navigation_tour_video_url}) 에 대한 a quick app overview."
+msgstr ""
+"\n"
+"You can always come back 으로 the [Welcome to Zulip video]"
+"({navigation_tour_video_url}) 에 대한 a quick app overview.\n"
 
 #: zerver/lib/onboarding.py:141
 #, python-brace-format
@@ -5389,14 +5418,27 @@ msgid ""
 "\n"
 "{demo_organization_text}\n"
 "\n"
-msgstr "Hello, 및 환영합니다 으로 Zulip!ð {inform_about_tracked_onboarding_messages_text}\n\n{getting_started_text} {organization_setup_text}\n\n{navigation_tour_video_text}\n\n{demo_organization_text}"
+msgstr ""
+"\n"
+"안녕하세요 그리고 Zulip 으로 오신것을 환영합니다 "
+"{inform_about_tracked_onboarding_messages_text}\n"
+"\n"
+"{getting_started_text} {organization_setup_text}\n"
+"\n"
+"{navigation_tour_video_text}\n"
+"\n"
+"{demo_organization_text}\n"
+"\n"
 
 #: zerver/lib/onboarding.py:211
 msgid ""
 "\n"
 "You can [download](/apps/) the [mobile and desktop apps](/apps/).\n"
 "Zulip also works great in a browser.\n"
-msgstr "You can [download](/apps/) the [mobile and desktop apps](/apps/).\nZulip also works great 에서 a browser."
+msgstr ""
+"\n"
+"당신은 [download](/apps/) 에서 [mobile and desktop apps](/apps/)을 다운로드 할 수 있습니다.\n"
+"Zulip은 브라우저에서도 작동합니다..\n"
 
 #: zerver/lib/onboarding.py:216
 msgid ""
@@ -5404,7 +5446,11 @@ msgid ""
 "Go to [Profile settings](#settings/profile) to add a [profile picture](/help/"
 "change-your-profile-picture)\n"
 "and edit your [profile information](/help/edit-your-profile).\n"
-msgstr "Go 으로 [Profile settings](#settings/profile) 으로 add a [profile picture](/help/change-your-profile-picture)\nand edit 귀하의 [profile information](/help/edit-your-profile)."
+msgstr ""
+"\n"
+"Go 으로 [Profile settings](#settings/profile) 으로 add a [profile picture](/help/"
+"change-your-profile-picture)\n"
+"and edit 귀하의 [profile information](/help/edit-your-profile).\n"
 
 #: zerver/lib/onboarding.py:221
 msgid ""
@@ -5415,7 +5461,14 @@ msgid ""
 "your language](/help/change-your-language), and otherwise customize your "
 "Zulip\n"
 "experience in your [Preferences](#settings/preferences).\n"
-msgstr "You can switch between [light and dark theme](/help/dark-theme), [pick your\nfavorite emoji set](/help/emoji-and-emoticons#change-your-emoji-set), [change\nyour language](/help/change-your-language), 및 otherwise customize 귀하의 Zulip\nexperience 에서 귀하의 [Preferences](#settings/preferences)."
+msgstr ""
+"\n"
+"You can switch between [light and dark theme](/help/dark-theme), [pick your\n"
+"favorite emoji set](/help/emoji-and-emoticons#change-your-emoji-set), "
+"[change\n"
+"your language](/help/change-your-language), and otherwise customize your "
+"Zulip\n"
+"experience in your [Preferences](#settings/preferences).\n"
 
 #: zerver/lib/onboarding.py:228
 #, python-brace-format
@@ -5426,7 +5479,13 @@ msgid ""
 "it's common to have a channel for each team in an organization.\n"
 "\n"
 "[Browse and subscribe to channels]({settings_link}).\n"
-msgstr "채널 organize conversations based 의 who needs 으로 see them. For example,\nit's common 으로 have a 채널 에 대한 each team 에서 an 조직.\n\n[Browse and subscribe to channels]({settings_link})."
+msgstr ""
+"\n"
+"Channels organize conversations based on who needs to see them. For "
+"example,\n"
+"it's common to have a channel for each team in an organization.\n"
+"\n"
+"[Browse and subscribe to channels]({settings_link}).\n"
 
 #: zerver/lib/onboarding.py:235
 msgid ""
@@ -5443,7 +5502,20 @@ msgid ""
 "Check out [Recent conversations](#recent) for a list of topics that are "
 "being\n"
 "discussed.\n"
-msgstr "[Topics](/help/introduction-to-topics) summarize what each conversation 에서 Zulip\nis about. You can read Zulip one 토픽 at a time, seeing each 메시지 in\ncontext, no matter how many other conversations are going on.\n\nWhen you start a conversation, label it 와(과) 함께 a new 토픽. For a good 토픽 name,\nthink about finishing the sentence: âHey, can we chat aboutâ¦?â\n\nCheck out [Recent conversations](#recent) 에 대한 a list 의 토픽 that are being\ndiscussed."
+msgstr ""
+"\n"
+"[Topics](/help/introduction-to-topics) summarize what each conversation in "
+"Zulip\n"
+"is about. You can read Zulip one topic at a time, seeing each message in\n"
+"context, no matter how many other conversations are going on.\n"
+"\n"
+"When you start a conversation, label it with a new topic. For a good topic "
+"name,\n"
+"think about finishing the sentence: “Hey, can we chat about…?”\n"
+"\n"
+"Check out [Recent conversations](#recent) for a list of topics that are "
+"being\n"
+"discussed.\n"
 
 #: zerver/lib/onboarding.py:247
 msgid ""
@@ -5452,7 +5524,12 @@ msgid ""
 "quickly and efficiently.\n"
 "\n"
 "Press `?` any time to see a [cheat sheet](#keyboard-shortcuts).\n"
-msgstr "Zulip's [keyboard shortcuts](#keyboard-shortcuts) let you navigate the app\nquickly 및 efficiently.\n\nPress `?` any time 으로 see a [cheat sheet](#keyboard-shortcuts)."
+msgstr ""
+"\n"
+"Zulip's [keyboard shortcuts](#keyboard-shortcuts) let you navigate the app\n"
+"quickly and efficiently.\n"
+"\n"
+"Press `?` any time to see a [cheat sheet](#keyboard-shortcuts).\n"
 
 #: zerver/lib/onboarding.py:254
 msgid ""
@@ -5464,7 +5541,15 @@ msgid ""
 "Check out the [cheat sheet](#message-formatting) to learn about spoilers, "
 "global\n"
 "times, and more.\n"
-msgstr "You can **format** *your* `메시지` using the handy formatting buttons, or by\ntyping 귀하의 formatting 와(과) 함께 Markdown.\n\nCheck out the [cheat sheet](#message-formatting) 으로 learn about spoilers, global\ntimes, 및 more."
+msgstr ""
+"\n"
+"You can **format** *your* `message` using the handy formatting buttons, or "
+"by\n"
+"typing your formatting with Markdown.\n"
+"\n"
+"Check out the [cheat sheet](#message-formatting) to learn about spoilers, "
+"global\n"
+"times, and more.\n"
 
 #: zerver/lib/onboarding.py:262
 #, python-brace-format
@@ -5474,7 +5559,12 @@ msgid ""
 "\n"
 "Check out our [Getting started guide](/help/getting-started-with-zulip),\n"
 "or browse the [help center](/help/) to learn more!\n"
-msgstr "Here are a few 메시지 I understand: {bot_commands}\n\nCheck out our [Getting started guide](/help/getting-started-with-zulip),\nor browse the [help center](/help/) 으로 learn more!"
+msgstr ""
+"\n"
+"Here are a few messages I understand: {bot_commands}\n"
+"\n"
+"Check out our [Getting started guide](/help/getting-started-with-zulip),\n"
+"or browse the [help center](/help/) to learn more!\n"
 
 #: zerver/lib/onboarding.py:269
 #, python-brace-format
@@ -5482,7 +5572,10 @@ msgid ""
 "\n"
 "You can chat with me as much as you like! To\n"
 "get help, try one of the following messages: {bot_commands}\n"
-msgstr "You can chat 와(과) 함께 me as much as you like! To\nget help, try one 의 the following 메시지: {bot_commands}"
+msgstr ""
+"\n"
+"You can chat with me as much as you like! To\n"
+"get help, try one of the following messages: {bot_commands}\n"
 
 #: zerver/lib/onboarding.py:361
 #, python-brace-format
@@ -5494,13 +5587,22 @@ msgid ""
 "({move_content_another_topic_help_url}) topics,\n"
 "or even move a topic [to a different channel]"
 "({move_content_another_channel_help_url}).\n"
-msgstr "If anything is out 의 place, itâs easy 으로 [move messages]({move_content_another_topic_help_url}),\n[rename]({rename_topic_help_url}) 및 [split]({move_content_another_topic_help_url}) 토픽,\nor even move a 토픽 [to a different channel]({move_content_another_channel_help_url})."
+msgstr ""
+"\n"
+"If anything is out of place, it’s easy to [move messages]"
+"({move_content_another_topic_help_url}),\n"
+"[rename]({rename_topic_help_url}) and [split]"
+"({move_content_another_topic_help_url}) topics,\n"
+"or even move a topic [to a different channel]"
+"({move_content_another_channel_help_url}).\n"
 
 #: zerver/lib/onboarding.py:372
 msgid ""
 "\n"
 ":point_right: Try moving this message to another topic and back.\n"
-msgstr ":point_right: Try moving this 메시지 으로 another 토픽 및 back."
+msgstr ""
+"\n"
+":point_right: Try moving this message to another topic and back.\n"
 
 #: zerver/lib/onboarding.py:376
 #, python-brace-format
@@ -5514,12 +5616,21 @@ msgid ""
 "#**{zulip_discussion_channel_name}** channel, as you can see in the left "
 "sidebar\n"
 "and above.\n"
-msgstr "Zulip is organized 으로 help you communicate more efficiently. Conversations are\nlabeled 와(과) 함께 토픽, which summarize what the conversation is about.\n\nFor example, this 메시지 is 에서 the â{topic_name}â 토픽 에서 the\n#**{zulip_discussion_channel_name}** 채널, as you can see 에서 the left sidebar\nand above."
+msgstr ""
+"\n"
+"Zulip is organized to help you communicate more efficiently. Conversations "
+"are\n"
+"labeled with topics, which summarize what the conversation is about.\n"
+"\n"
+"For example, this message is in the “{topic_name}” topic in the\n"
+"#**{zulip_discussion_channel_name}** channel, as you can see in the left "
+"sidebar\n"
+"and above.\n"
 
 #: zerver/lib/onboarding.py:385 zerver/lib/onboarding.py:437
 #: zerver/lib/onboarding.py:528
 msgid "welcome to Zulip!"
-msgstr "환영합니다 으로 Zulip!"
+msgstr "Zulip으로 오신것을 환영합니다!"
 
 #: zerver/lib/onboarding.py:388
 msgid ""
@@ -5527,14 +5638,21 @@ msgid ""
 "You can read Zulip one conversation at a time, seeing each message in "
 "context,\n"
 "no matter how many other conversations are going on.\n"
-msgstr "You can read Zulip one conversation at a time, seeing each 메시지 에서 context,\nno matter how many other conversations are going on."
+msgstr ""
+"\n"
+"진행 중인 다른 대화 수에 관계없이 Zulip을 한 번에 "
+"하나의 대화로,\n"
+"읽을 수 있으며, 각 메시지를 맥락에서 볼 수 있습니다.\n"
 
 #: zerver/lib/onboarding.py:393
 msgid ""
 "\n"
 ":point_right: When you're ready, check out your [Inbox](/#inbox) for other\n"
 "conversations with unread messages.\n"
-msgstr ":point_right: When you're ready, check out 귀하의 [Inbox](/#inbox) 에 대한 other\nconversations 와(과) 함께 unread 메시지."
+msgstr ""
+"\n"
+":point_right: When you're ready, check out your [Inbox](/#inbox) for other\n"
+"conversations with unread messages.\n"
 
 #: zerver/lib/onboarding.py:398
 msgid ""
@@ -5542,7 +5660,11 @@ msgid ""
 "To kick off a new conversation, pick a channel in the left sidebar, and "
 "click\n"
 "the `+` button next to its name.\n"
-msgstr "To kick off a new conversation, pick a 채널 에서 the left sidebar, 및 click\nthe `+` button next 으로 its name."
+msgstr ""
+"\n"
+"To kick off a new conversation, pick a channel in the left sidebar, and "
+"click\n"
+"the `+` button next to its name.\n"
 
 #: zerver/lib/onboarding.py:403
 msgid ""
@@ -5550,13 +5672,19 @@ msgid ""
 "Label your conversation with a topic. Think about finishing the sentence: "
 "“Hey,\n"
 "can we chat about…?”\n"
-msgstr "Label 귀하의 conversation 와(과) 함께 a 토픽. Think about finishing the sentence: âHey,\ncan we chat aboutâ¦?â"
+msgstr ""
+"\n"
+"Label your conversation with a topic. Think about finishing the sentence: "
+"“Hey,\n"
+"can we chat about…?”\n"
 
 #: zerver/lib/onboarding.py:408
 msgid ""
 "\n"
 ":point_right: Try starting a new conversation in this channel.\n"
-msgstr ":point_right: Try starting a new conversation 에서 this 채널."
+msgstr ""
+"\n"
+":오른쪽: 이 채널에서 새로운 대화를 시작해 보세요.\n"
 
 #: zerver/lib/onboarding.py:413
 #, python-brace-format
@@ -5564,7 +5692,10 @@ msgid ""
 "\n"
 ":point_right:  Use this topic to try out [Zulip's messaging features]"
 "({format_message_help_url}).\n"
-msgstr ":point_right:  Use this 토픽 으로 try out [Zulip's messaging features]({format_message_help_url})."
+msgstr ""
+"\n"
+":point_right:  Use this 토픽 으로 try out [Zulip's messaging features]
+"({format_message_help_url}).\n"
 
 #: zerver/lib/onboarding.py:419
 #, python-brace-format
@@ -5584,45 +5715,66 @@ msgid ""
 "Link to a conversation: #**{zulip_discussion_channel_name}>{topic_name}**\n"
 "\n"
 "```\n"
-msgstr "```spoiler Want 으로 see some examples?\n\n````python\n\nprint(\"code blocks\")\n\n````\n\n- bulleted\n- lists\n\nLink 으로 a conversation: #**{zulip_discussion_channel_name}>{topic_name}**\n\n```"
+msgstr ""
+"\n"
+"```spoiler Want to see some examples?\n"
+"\n"
+"````python\n"
+"\n"
+"print(\"code blocks\")\n"
+"\n"
+"````\n"
+"\n"
+"- bulleted\n"
+"- lists\n"
+"\n"
+"Link to a conversation: #**{zulip_discussion_channel_name}>{topic_name}**\n"
+"\n"
+"```\n"
 
 #: zerver/lib/onboarding.py:440
 msgid ""
 "\n"
 "This **greetings** topic is a great place to say “hi” :wave: to your "
 "teammates.\n"
-msgstr "This **greetings** 토픽 is a great place 으로 say âhiâ :wave: 으로 귀하의 teammates."
+msgstr ""
+"\n"
+"This **greetings** topic is a great place to say “hi” :wave: to your "
+"teammates.\n"
 
 #: zerver/lib/onboarding.py:444
 msgid ""
 "\n"
 ":point_right: Click on this message to start a new message in the same "
 "conversation.\n"
-msgstr ":point_right: Click 의 this 메시지 으로 start a new 메시지 에서 the same conversation."
+msgstr ""
+"\n"
+":point_right: Click on this message to start a new message in the same "
+"conversation.\n"
 
 #: zerver/lib/onboarding.py:464
 msgid "moving messages"
-msgstr "moving 메시지"
+msgstr "움직이는 메시지"
 
 #: zerver/lib/onboarding.py:481
 msgid "experiments"
-msgstr "experiments"
+msgstr "실험"
 
 #: zerver/lib/onboarding.py:496
 msgid "start a conversation"
-msgstr "start a conversation"
+msgstr "대화 시작"
 
 #: zerver/lib/onboarding.py:513
 msgid "greetings"
-msgstr "greetings"
+msgstr "인삿말"
 
 #: zerver/lib/outgoing_webhook.py:320
 msgid "Invalid JSON in response"
-msgstr "Invalid JSON 에서 response"
+msgstr "응답에 잘못된 JSON이 있습니다."
 
 #: zerver/lib/outgoing_webhook.py:329
 msgid "Invalid response format"
-msgstr "Invalid response format"
+msgstr "잘못된 응답 형식"
 
 #: zerver/lib/push_notifications.py:96
 msgid "Empty or invalid length token"
@@ -5654,12 +5806,12 @@ msgstr "{full_name} mentioned @{user_group_name}:"
 #: zerver/lib/push_notifications.py:1090
 #, python-brace-format
 msgid "{full_name} mentioned you:"
-msgstr "{full_name} mentioned you:"
+msgstr "{full_name} 님이 당신을 언급했습니다:"
 
 #: zerver/lib/push_notifications.py:1097
 #, python-brace-format
 msgid "{full_name} mentioned everyone:"
-msgstr "{full_name} mentioned everyone:"
+msgstr "{full_name} 님이 모든 사람을 언급했습니다:"
 
 #: zerver/lib/push_notifications.py:1373
 msgid "New message"
@@ -5667,7 +5819,7 @@ msgstr "새로운 메시지"
 
 #: zerver/lib/push_notifications.py:1779
 msgid "Test notification"
-msgstr "Test notification"
+msgstr "테스트 알림"
 
 #: zerver/lib/push_notifications.py:1780
 #, python-brace-format
@@ -5731,7 +5883,8 @@ msgstr "최대 알람 메모 길이 너무 깁니다 (제한: {max_length} 글�
 msgid ""
 "You requested a reminder for {message_pretty_link}. Note:\n"
 " > {note}"
-msgstr "You requested a reminder 에 대한 {message_pretty_link}. Note:\n > {note}"
+msgstr "You requested a reminder 에 대한 {message_pretty_link}. Note:\n"
+" > {note}"
 
 #: zerver/lib/reminders.py:56
 #, python-brace-format
@@ -5743,7 +5896,8 @@ msgstr "You requested a reminder 에 대한 {message_pretty_link}."
 msgid ""
 "You requested a reminder for the following direct message. Note:\n"
 " > {note}"
-msgstr "You requested a reminder 에 대한 the following direct 메시지. Note:\n > {note}"
+msgstr "You requested a reminder 에 대한 the following direct 메시지. Note:\n"
+" > {note}"
 
 #: zerver/lib/reminders.py:67
 msgid "You requested a reminder for the following direct message."
@@ -6691,7 +6845,7 @@ msgstr "이메일 주소를 하나 이상 지정해야합니다."
 msgid ""
 "Some of those addresses are already using Zulip, so we didn't send them an "
 "invitation. We did send invitations to everyone else!"
-msgstr "Some 의 those addresses are already using Zulip, so we didn't send them an invitation. We did send invitations 으로 everyone else!"
+msgstr ""
 "그 중 일부 주소는 이미 Zulip을 사용하고 있으므로 초대장을 보내지 않았습니다. "
 "우리는 다른 모든 사람들에게 초대장을 보냈습니다!"
 
@@ -6802,7 +6956,10 @@ msgid ""
 "\n"
 "You asked to watch the [Welcome to Zulip video]({navigation_tour_video_url}) "
 "later. Is this a good time?\n"
-msgstr "You asked 으로 watch the [Welcome to Zulip video]({navigation_tour_video_url}) later. Is this a good time?"
+msgstr ""
+"\n"
+"You asked to watch the [Welcome to Zulip video]({navigation_tour_video_url}) "
+"later. Is this a good time?\n"
 
 #: zerver/views/presence.py:48
 msgid "Presence is not supported for bot users."
@@ -6820,7 +6977,8 @@ msgstr "Client did not pass any new values."
 #: zerver/views/presence.py:124
 msgid ""
 "Client must pass emoji_name if they pass either emoji_code or reaction_type."
-msgstr "Client must pass emoji_name if they pass either emoji_code or reaction_type."
+msgstr ""
+"Client must pass emoji_name if they pass either emoji_code or reaction_type."
 
 #: zerver/views/presence.py:195
 #, python-brace-format
@@ -6921,14 +7079,15 @@ msgstr "Exceeded rate limit."
 #: zerver/views/realm_export.py:84
 #, python-brace-format
 msgid "Please request a manual export from {email}."
-msgstr "요청 a manual export from {email}.해 주세요"
+msgstr "{email}에서 수동 내보내기를 요청하세요."
 
 #: zerver/views/realm_export.py:95
 #, python-brace-format
 msgid ""
 "Make sure at least one Organization Owner is consenting to the export or "
 "contact {email} for help."
-msgstr "Make sure at least one 조직 Owner is consenting 으로 the export or contact {email} 에 대한 help."
+msgstr "최소 한 명의 조직 소유자가 내보내기에 동의하는지 확인하세요."
+"도움이 필요하면 {email}에 문의하세요."
 
 #: zerver/views/realm_export.py:102
 #, python-brace-format
@@ -7027,13 +7186,11 @@ msgstr "Private 채널 cannot be made default."
 
 #: zerver/views/streams.py:209
 msgid "You must pass \"new_description\" or \"new_group_name\"."
-msgstr "\"new_description\"또는 \"new_group_name\"을 전달해야 합니다."
+msgstr "You must pass \"new_description\" or \"new_group_name\"."
 
 #: zerver/views/streams.py:240
 msgid "Invalid value for \"op\". Specify one of \"add\" or \"remove\"."
-msgstr "Invalid value 에 대한 \"op\". Specify one 의 \"add\" or \"remove\"."
-"\"op\"에 대한 값이 유효하지 않습니다. \"추가\"또는 \"제거\"중 하나를 지정하십"
-"시오."
+msgstr "Invalid value for \"op\". Specify one of \"add\" or \"remove\"."
 
 #: zerver/views/streams.py:355 zerver/views/streams.py:359
 #: zerver/views/streams.py:367
@@ -7050,7 +7207,7 @@ msgstr "채널 already has that name."
 
 #: zerver/views/streams.py:566 zerver/views/user_groups.py:511
 msgid "Nothing to do. Specify at least one of \"add\" or \"delete\"."
-msgstr "할 것이 없다. \"추가\"또는 \"삭제\"중 적어도 하나를 지정하십시오."
+msgstr "할 일 없음. \"추가\"또는 \"삭제\"중 적어도 하나를 지정하십시오."
 
 #: zerver/views/streams.py:643
 #, python-brace-format
@@ -7193,7 +7350,9 @@ msgstr "새로운 데이터가 제공되지 않았습니다."
 msgid ""
 "Nothing to do. Specify at least one of \"add\", \"delete\", "
 "\"add_subgroups\" or \"delete_subgroups\"."
-msgstr "Nothing 으로 do. Specify at least one 의 \"add\", \"delete\", \"add_subgroups\" or \"delete_subgroups\"."
+msgstr ""
+"Nothing to do. Specify at least one of \"add\", \"delete\", "
+"\"add_subgroups\" or \"delete_subgroups\"."
 
 #: zerver/views/user_groups.py:304
 #, python-brace-format
@@ -7554,11 +7713,13 @@ msgstr "Missing user_id or user_uuid"
 msgid ""
 "Your plan doesn't allow sending push notifications. Reason provided by the "
 "server: {reason}"
-msgstr "Your 요금제 doesn't allow sending push notifications. Reason provided by the 서버: {reason}"
+msgstr ""
+"귀하의 요금제는 푸시 알림 전송을 허용하지 않습니다. 사유 제공 "
+"server: {reason}"
 
 #: zilencer/views.py:924
 msgid "Your plan doesn't allow sending push notifications."
-msgstr "Your 요금제 doesn't allow sending push notifications."
+msgstr "귀하의 계획에서는 푸시 알림 전송을 허용하지 않습니다."
 
 #: zilencer/views.py:1139
 #, python-brace-format
@@ -7571,7 +7732,7 @@ msgstr "Invalid event type."
 
 #: zilencer/views.py:1149
 msgid "Data is out of order."
-msgstr "Data is out 의 order."
+msgstr "데이터가 잘못되었습니다."
 
 #: zilencer/views.py:1254
 msgid "Duplicate registration detected."
@@ -7583,7 +7744,7 @@ msgstr "Malformed audit log data"
 
 #: zproject/backends.py:560
 msgid "You need to reset your password."
-msgstr "You need 으로 재설정 귀하의 비밀번호."
+msgstr "비밀번호를 재설정해야 합니다."
 
 #: zproject/backends.py:2827
 msgid "Missing id_token parameter"
