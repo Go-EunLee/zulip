@@ -3646,7 +3646,7 @@ msgstr "Unsupported browser"
 #, fuzzy, python-format
 #| msgid "Presence is not supported for bot users."
 msgid "%(browser_name)s is not supported by Zulip."
-msgstr "%(browser_name)는 봇 사용자에게는 지원되지 않습니다."
+msgstr "%(browser_name)s 는 봇 사용자에게는 지원되지 않습니다."
 
 #: templates/zerver/portico_error_pages/unsupported_browser.html:18
 #, python-format
