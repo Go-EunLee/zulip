@@ -5266,7 +5266,7 @@ msgid ""
 "- Notes:\n"
 msgstr ""
 "\n"
-"- 원인: **{report_type}**\n
+"- 원인: **{report_type}**\n"
 "- Notes:\n"
 
 #: zerver/lib/message_report.py:91
@@ -5380,8 +5380,8 @@ msgid ""
 "a permanent organization]({convert_demo_organization_help_url}).\n"
 msgstr ""
 "\n"
-"이것은 [demo organization]({demo_organization_help_url}) 이며\n"
-"will be **automatically deleted** 에서 30 days, unless it's [converted into\n""
+"Note that this is a [demo organization]({demo_organization_help_url}) and\n"
+"will be **automatically deleted** in 30 days, unless it's [converted into\n"
 "a permanent organization]({convert_demo_organization_help_url}).\n"
 
 #: zerver/lib/onboarding.py:125
@@ -5694,7 +5694,7 @@ msgid ""
 "({format_message_help_url}).\n"
 msgstr ""
 "\n"
-":point_right:  Use this 토픽 으로 try out [Zulip's messaging features]
+":point_right:  Use this 토픽 으로 try out [Zulip's messaging features]"
 "({format_message_help_url}).\n"
 
 #: zerver/lib/onboarding.py:419
