@@ -2,17 +2,17 @@
     <div id="left-sidebar-search" class="zoom-in-hide">
         <div class="input-wrapper-for-tooltip tippy-zulip-delayed-tooltip" data-tooltip-template-id="filter-left-sidebar-tooltip-template">
             {{#> input_wrapper input_type="filter-input" custom_classes="left-sidebar-search-section" icon="search" input_button_icon="close"}}
-                <input type="text" class="input-element left-sidebar-search-input home-page-input" autocomplete="off" placeholder="{{t 'Filter left sidebar' }}" />
+                <input type="text" class="input-element left-sidebar-search-input home-page-input" autocomplete="off" placeholder="{{t '왼쪽 사이드바 필터' }}" />
             {{/input_wrapper}}
         </div>
         <span id="add_streams_tooltip" class="add-stream-icon-container hidden-for-spectators">
             <i id="streams_inline_icon" class="add_stream_icon zulip-icon zulip-icon-square-plus" aria-hidden="true" ></i>
         </span>
-        <span class="sidebar-menu-icon channel-folders-sidebar-menu-icon hidden-for-spectators"><i class="zulip-icon zulip-icon-more-vertical" aria-label="{{t 'Show channel folders'}}"></i></span>
+        <span class="sidebar-menu-icon channel-folders-sidebar-menu-icon hidden-for-spectators"><i class="zulip-icon zulip-icon-more-vertical" aria-label="{{t '채널 폴더 표시'}}"></i></span>
     </div>
     <ul id="left-sidebar-empty-list-message" class="hidden">
         {{> empty_list_widget_for_list
-          empty_list_message=(t "No matches.")
+          empty_list_message=(t "일치하는 항목 없음.")
           }}
     </ul>
     <div id="left-sidebar-navigation-area" class="left-sidebar-navigation-area">
