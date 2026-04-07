@@ -48,14 +48,14 @@
                     {{/if}}
                     <span class="status_text personal-menu-status-text">
                         {{#if show_placeholder_for_status_text}}
-                            <i class="personal-menu-no-status-text">{{t "No status text"}}</i>
+                            <i class="personal-menu-no-status-text">{{t "상태 메시지 없음"}}</i>
                         {{else}}
                             {{status_text}}
                         {{/if}}
                     </span>
                 </span>
                 {{#if is_me}}
-                    <a role="menuitem" tabindex="0" class="personal-menu-clear-status user-card-clear-status-button popover-menu-link" aria-label="{{t 'Clear status'}}" data-tippy-content="{{t 'Clear your status' }}">
+                    <a role="menuitem" tabindex="0" class="personal-menu-clear-status user-card-clear-status-button popover-menu-link" aria-label="{{t '내 상태 메시지 지우기'}}" data-tippy-content="{{t '내 상태 메시지 지우기' }}">
                         <i class="personal-menu-clear-status-icon popover-menu-icon zulip-icon zulip-icon-x-circle" aria-hidden="true"></i>
                     </a>
                 {{/if}}
@@ -66,14 +66,14 @@
                 <li role="none" class="link-item popover-menu-list-item hidden-for-spectators">
                     <a role="menuitem" tabindex="0" class="update_status_text popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-smile-smaller" aria-hidden="true"></i>
-                        <span class="popover-menu-label">{{t 'Edit status' }}</span>
+                        <span class="popover-menu-label">{{t '상태 메시지 수정' }}</span>
                     </a>
                 </li>
             {{else}}
                 <li role="none" class="link-item popover-menu-list-item hidden-for-spectators">
                     <a role="menuitem" tabindex="0" class="update_status_text popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-smile-smaller" aria-hidden="true"></i>
-                        <span class="popover-menu-label">{{t 'Set status' }}</span>
+                        <span class="popover-menu-label">{{t '상태 메시지 설정' }}</span>
                     </a>
                 </li>
             {{/if}}
@@ -81,14 +81,14 @@
                 <li role="none" class="link-item popover-menu-list-item">
                     <a role="menuitem" tabindex="0" class="invisible_mode_turn_off popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-play-circle" aria-hidden="true"></i>
-                        <span class="popover-menu-label">{{t 'Turn off invisible mode' }}</span>
+                        <span class="popover-menu-label">{{t '숨김 상태 해제' }}</span>
                     </a>
                 </li>
             {{else}}
                 <li role="none" class="link-item popover-menu-list-item hidden-for-spectators">
                     <a role="menuitem" tabindex="0" class="invisible_mode_turn_on popover-menu-link">
                         <i class="popover-menu-icon zulip-icon zulip-icon-stop-circle" aria-hidden="true"></i>
-                        <span class="popover-menu-label">{{t 'Go invisible' }}</span>
+                        <span class="popover-menu-label">{{t '숨김 상태로 전환' }}</span>
                     </a>
                 </li>
             {{/if}}
@@ -106,28 +106,28 @@
             {{#if user_time}}
                 <li role="none" class="popover-menu-list-item text-item hidden-for-spectators">
                     <i class="popover-menu-icon zulip-icon zulip-icon-clock" aria-hidden="true"></i>
-                    <span class="popover-menu-label">{{t "{user_time} local time" }}</span>
+                    <span class="popover-menu-label">{{t "현지 시간 {user_time}" }}</span>
                 </li>
             {{/if}}
         {{else}}
             <li role="none" class="popover-menu-list-item text-item italic hidden-for-spectators">
                 {{#if is_bot}}
-                    <span class="popover-menu-label">{{t "This bot has been deactivated." }}</span>
+                    <span class="popover-menu-label">{{t "이 봇은 비활성화되었습니다." }}</span>
                 {{else}}
-                    <span class="popover-menu-label">{{t "This user has been deactivated." }}</span>
+                    <span class="popover-menu-label">{{t "이 사용자는 비활성화되었습니다." }}</span>
                 {{/if}}
             </li>
         {{/if}}
         {{#if spectator_view}}
             <li role="none" class="popover-menu-list-item text-item">
-                <span class="popover-menu-label">{{t "Joined {date_joined}" }}</span>
+                <span class="popover-menu-label">{{t "가입일 {date_joined}" }}</span>
             </li>
         {{/if}}
         <li role="separator" class="popover-menu-separator hidden-for-spectators"></li>
         {{#if is_bot}}
             {{#if bot_owner}}
                 <li role="none" class="popover-menu-list-item user-card-popover-bot-owner-field text-item hidden-for-spectators">
-                    <span class="bot_owner" data-tippy-content="{{ bot_owner.full_name }}">{{t "Bot owner" }}:</span>
+                    <span class="bot_owner" data-tippy-content="{{ bot_owner.full_name }}">{{t "봇 소유자" }}:</span>
                     {{> ../../user_display_only_pill display_value=bot_owner.full_name user_id=bot_owner.user_id img_src=bot_owner.avatar_url is_active=true}}
                 </li>
             {{/if}}
@@ -136,7 +136,7 @@
             {{#if user_email}}
                 <li role="none" class="popover-menu-list-item text-item user-card-popover-email-field hidden-for-spectators">
                     <span class="user_popover_email">{{ user_email }}</span>
-                    <span role="menuitem" tabindex="0" id="popover-menu-copy-email" class="popover-menu-link copy-button hide_copy_icon" aria-label="{{t 'Copy email'}}" data-tippy-content="{{t 'Copy email' }}" data-clipboard-text="{{ user_email }}">
+                    <span role="menuitem" tabindex="0" id="popover-menu-copy-email" class="popover-menu-link copy-button hide_copy_icon" aria-label="{{t '이메일 주소 복사'}}" data-tippy-content="{{t '이메일 주소 복사' }}" data-clipboard-text="{{ user_email }}">
                         <i class="zulip-icon zulip-icon-copy hide" aria-hidden="true"></i>
                     </span>
                 </li>
@@ -147,9 +147,9 @@
             <a role="menuitem" class="popover-menu-link view_full_user_profile" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-account" aria-hidden="true"></i>
                 {{#if is_me}}
-                    <span class="popover-menu-label">{{t "View your profile" }}</span>
+                    <span class="popover-menu-label">{{t "내 프로필 보기" }}</span>
                 {{else}}
-                    <span class="popover-menu-label">{{t "View profile" }}</span>
+                    <span class="popover-menu-label">{{t "프로필 보기" }}</span>
                 {{/if}}
             </a>
         </li>
@@ -157,7 +157,7 @@
             <li role="none" class="popover-menu-list-item link-item hidden-for-spectators">
                 <a role="menuitem" class="popover-menu-link {{ private_message_class }}" tabindex="0">
                     <i class="popover-menu-icon zulip-icon zulip-icon-send-dm" aria-hidden="true"></i>
-                    <span class="popover-menu-label">{{t "Send direct message" }}</span>
+                    <span class="popover-menu-label">{{t "개인 메시지 보내기" }}</span>
                     {{#if is_sender_popover}}
                         {{popover_hotkey_hints "R"}}
                     {{/if}}
@@ -170,9 +170,9 @@
                     <a role="menuitem" class="popover-menu-link mention_user" tabindex="0">
                         <i class="popover-menu-icon zulip-icon zulip-icon-at-sign" aria-hidden="true"></i>
                         {{#if is_bot}}
-                            <span class="popover-menu-label">{{t "Reply mentioning bot" }}</span>
+                            <span class="popover-menu-label">{{t "봇을 언급해 답장하기" }}</span>
                         {{else}}
-                            <span class="popover-menu-label">{{t "Reply mentioning user" }}</span>
+                            <span class="popover-menu-label">{{t "사용자를 언급해 답장하기" }}</span>
                         {{/if}}
                         {{#if is_sender_popover}}
                             {{popover_hotkey_hints "@"}}
@@ -181,7 +181,7 @@
                 {{else}}
                     <a role="menuitem" class="popover-menu-link copy_mention_syntax" tabindex="0" data-clipboard-text="{{ user_mention_syntax }}">
                         <i class="popover-menu-icon fa zulip-icon zulip-icon-at-sign" aria-hidden="true"></i>
-                        <span class="popover-menu-label">{{t "Copy mention syntax" }}</span>
+                        <span class="popover-menu-label">{{t "언급 형식 복사" }}</span>
                         {{#if is_sender_popover}}
                             {{popover_hotkey_hints "@"}}
                         {{/if}}
@@ -193,7 +193,7 @@
             <li role="none" class="popover-menu-list-item link-item hidden-for-spectators">
                 <a role="menuitem" class="popover-menu-link edit-your-profile" tabindex="0">
                     <i class="popover-menu-icon zulip-icon zulip-icon-tool" aria-hidden="true"></i>
-                    <span class="popover-menu-label">{{t "Edit your profile" }}</span>
+                    <span class="popover-menu-label">{{t "내 프로필 수정" }}</span>
                 </a>
             </li>
         {{/if}}
@@ -202,16 +202,16 @@
             <a role="menuitem" href="{{ pm_with_url }}" class="narrow_to_private_messages popover-menu-link hidden-for-spectators" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-user" aria-hidden="true"></i>
                 {{#if is_me}}
-                    <span class="popover-menu-label">{{t "View messages with yourself" }}</span>
+                    <span class="popover-menu-label">{{t "나와의 메시지 보기" }}</span>
                 {{else}}
-                    <span class="popover-menu-label">{{t "View direct messages" }}</span>
+                    <span class="popover-menu-label">{{t "개인 메시지 보기" }}</span>
                 {{/if}}
             </a>
         </li>
         <li role="none" class="popover-menu-list-item link-item">
             <a role="menuitem" href="{{ sent_by_url }}" class="narrow_to_messages_sent popover-menu-link hidden-for-spectators" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-message-square" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "View messages sent" }}</span>
+                <span class="popover-menu-label">{{t "보낸 메시지 보기" }}</span>
             </a>
         </li>
         {{#if show_manage_section}}
@@ -221,9 +221,9 @@
                     <a role="menuitem" class="sidebar-popover-mute-user popover-menu-link hidden-for-spectators" tabindex="0">
                         <i class="popover-menu-icon zulip-icon zulip-icon-hide" aria-hidden="true"></i>
                         {{#if is_bot}}
-                            <span class="popover-menu-label">{{t "Mute this bot" }}</span>
+                            <span class="popover-menu-label">{{t "봇 알림 끄기" }}</span>
                         {{else}}
-                            <span class="popover-menu-label">{{t "Mute this user" }}</span>
+                            <span class="popover-menu-label">{{t "사용자 알림 끄기" }}</span>
                         {{/if}}
                     </a>
                 </li>
@@ -233,9 +233,9 @@
                     <a role="menuitem" class="sidebar-popover-unmute-user popover-menu-link hidden-for-spectators" tabindex="0">
                         <i class="popover-menu-icon fa fa-eye" aria-hidden="true"></i>
                         {{#if is_bot}}
-                            <span class="popover-menu-label">{{t "Unmute this bot" }}</span>
+                            <span class="popover-menu-label">{{t "봇 알림 켜기" }}</span>
                         {{else}}
-                            <span class="popover-menu-label">{{t "Unmute this user" }}</span>
+                            <span class="popover-menu-label">{{t "사용자 알림 켜기" }}</span>
                         {{/if}}
                     </a>
                 </li>
@@ -246,9 +246,9 @@
                     <a role="menuitem" class="sidebar-popover-manage-user popover-menu-link hidden-for-spectators" tabindex="0">
                         <i class="popover-menu-icon zulip-icon zulip-icon-user-cog" aria-hidden="true"></i>
                         {{#if is_bot}}
-                            <span class="popover-menu-label">{{t "Manage this bot" }}</span>
+                            <span class="popover-menu-label">{{t "봇 관리" }}</span>
                         {{else}}
-                            <span class="popover-menu-label">{{t "Manage this user" }}</span>
+                            <span class="popover-menu-label">{{t "사용자 관리" }}</span>
                         {{/if}}
                     </a>
                 </li>
@@ -257,9 +257,9 @@
                         <a role="menuitem" class="sidebar-popover-reactivate-user popover-menu-link hidden-for-spectators" tabindex="0">
                             <i class="popover-menu-icon zulip-icon zulip-icon-user-plus" aria-hidden="true"></i>
                             {{#if is_bot}}
-                                <span class="popover-menu-label">{{t "Reactivate this bot" }}</span>
+                                <span class="popover-menu-label">{{t "봇 활성화" }}</span>
                             {{else}}
-                                <span class="popover-menu-label">{{t "Reactivate this user" }}</span>
+                                <span class="popover-menu-label">{{t "사용자 활성화" }}</span>
                             {{/if}}
                         </a>
                     </li>
