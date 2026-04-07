@@ -1430,7 +1430,7 @@ msgid ""
 "I agree to the <a href=\"%(root_domain_url)s/policies/terms\" "
 "target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a>."
 msgstr ""
-"<a href=\"%(root_domain_url)s/policies/terms\" 
+"<a href=\"%(root_domain_url)s/policies/terms\" "
 "target=\"_blank\" rel=\"noopener noreferrer\">서비스 약관</a>에 동의합니다."
 
 #: templates/zerver/accounts_accept_terms.html:68
