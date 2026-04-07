@@ -20,11 +20,11 @@
                         </a>
                         <span class="unread_mention_info tippy-zulip-tooltip
                           {{#unless has_unread_mention}}hidden{{/unless}}"
-                          data-tippy-content="{{t 'You have unread mentions' }}">@</span>
+                          data-tippy-content="{{t '나를 언급한 읽지 않은 메시지가 있습니다.' }}">@</span>
                         <div class="unread-count-focus-outline" tabindex="0" data-col-index="{{ column_indexes.UNREAD_COUNT }}">
                             <span class="unread_count tippy-zulip-tooltip on_hover_dm_read"
-                              data-user-ids-string="{{user_ids_string}}" data-tippy-content="{{t 'Mark as read' }}"
-                              aria-label="{{t 'Mark as read' }}">{{unread_count}}</span>
+                              data-user-ids-string="{{user_ids_string}}" data-tippy-content="{{t '읽음으로 표시' }}"
+                              aria-label="{{t '읽음으로 표시' }}">{{unread_count}}</span>
                         </div>
                     {{else if is_topic}}
                         <div class="inbox-topic-name">
@@ -37,7 +37,7 @@
                         <div class="unread-count-focus-outline" tabindex="0" data-col-index="{{ column_indexes.UNREAD_COUNT }}">
                             <span class="unread_count tippy-zulip-tooltip on_hover_topic_read"
                               data-stream-id="{{stream_id}}" data-topic-name="{{topic_name}}"
-                              data-tippy-content="{{t 'Mark as read' }}" aria-label="{{t 'Mark as read' }}">
+                              data-tippy-content="{{t '읽음으로 표시' }}" aria-label="{{t '읽음으로 표시' }}">
                                 {{unread_count}}
                             </span>
                         </div>
@@ -52,17 +52,17 @@
                         <span class="visibility-policy-indicator change_visibility_policy hidden-for-spectators{{#if (eq visibility_policy all_visibility_policies.INHERIT)}} inbox-row-visibility-policy-inherit{{/if}}"
                           data-stream-id="{{stream_id}}" data-topic-name="{{topic_name}}" tabindex="0" data-col-index="{{ column_indexes.TOPIC_VISIBILITY }}">
                             {{#if (eq visibility_policy all_visibility_policies.FOLLOWED)}}
-                                <i class="zulip-icon zulip-icon-follow recipient_bar_icon" data-tippy-content="{{t 'You follow this topic.'}}"
-                                  role="button" aria-haspopup="true" aria-label="{{t 'You follow this topic.' }}"></i>
+                                <i class="zulip-icon zulip-icon-follow recipient_bar_icon" data-tippy-content="{{t '이 주제를 팔로우합니다.'}}"
+                                  role="button" aria-haspopup="true" aria-label="{{t '이 주제를 팔로우합니다.' }}"></i>
                             {{else if (eq visibility_policy all_visibility_policies.UNMUTED)}}
-                                <i class="zulip-icon zulip-icon-unmute recipient_bar_icon" data-tippy-content="{{t 'You have unmuted this topic.'}}"
-                                  role="button" aria-haspopup="true" aria-label="{{t 'You have unmuted this topic.' }}"></i>
+                                <i class="zulip-icon zulip-icon-unmute recipient_bar_icon" data-tippy-content="{{t '이 주제의 알림을 켰습니다.'}}"
+                                  role="button" aria-haspopup="true" aria-label="{{t '이 주제의 알림을 켰습니다.' }}"></i>
                             {{else if (eq visibility_policy all_visibility_policies.MUTED)}}
-                                <i class="zulip-icon zulip-icon-mute recipient_bar_icon" data-tippy-content="{{t 'You have muted this topic.'}}"
-                                  role="button" aria-haspopup="true" aria-label="{{t 'You have muted this topic.' }}"></i>
+                                <i class="zulip-icon zulip-icon-mute recipient_bar_icon" data-tippy-content="{{t '이 주제의 알림을 껐습니다.'}}"
+                                  role="button" aria-haspopup="true" aria-label="{{t '이 주제의 알림을 껐습니다.' }}"></i>
                             {{else if (eq visibility_policy all_visibility_policies.INHERIT)}}
                                 <i class="zulip-icon zulip-icon-inherit recipient_bar_icon"
-                                  role="button" aria-haspopup="true" aria-label="{{t 'Notifications are based on your configuration for this channel.' }}"></i>
+                                  role="button" aria-haspopup="true" aria-label="{{t '알림은 이 채널 설정에 따라 제공됩니다.' }}"></i>
                             {{/if}}
                         </span>
                     {{/if}}
