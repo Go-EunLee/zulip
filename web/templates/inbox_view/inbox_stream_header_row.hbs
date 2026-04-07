@@ -9,18 +9,18 @@
                     <span class="inbox-header-name-text">{{stream_name}}</span>
                     {{#if is_archived}}
                         <span class="inbox-header-stream-archived">
-                            <i class="archived-indicator">({{t 'archived' }})</i>
+                            <i class="archived-indicator">({{t '보관' }})</i>
                         </span>
                     {{/if}}
                 </div>
                 <div class="collapsible-button toggle-inbox-header-icon {{#if is_collapsed}}icon-collapsed-state{{/if}}"><i class="channel-row-chevron zulip-icon zulip-icon-chevron-down"></i></div>
                 <span class="unread_mention_info tippy-zulip-tooltip
                   {{#unless mention_in_unread}}hidden{{/unless}}"
-                  data-tippy-content="{{t 'You have unread mentions'}}">@</span>
+                  data-tippy-content="{{t '나를 언급한 읽지 않은 메시지가 있습니다'}}">@</span>
                 <div class="unread-count-focus-outline" tabindex="0" data-col-index="{{ column_indexes.UNREAD_COUNT }}">
                     <span class="unread_count tippy-zulip-tooltip on_hover_topic_read"
-                      data-stream-id="{{stream_id}}" data-tippy-content="{{t 'Mark as read' }}"
-                      aria-label="{{t 'Mark as read' }}">{{unread_count}}</span>
+                      data-stream-id="{{stream_id}}" data-tippy-content="{{t '읽음으로 표시' }}"
+                      aria-label="{{t '읽음으로 표시' }}">{{unread_count}}</span>
                 </div>
             </div>
         </div>
