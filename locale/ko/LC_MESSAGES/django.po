@@ -52,11 +52,11 @@ msgstr "개인 채널"
 
 #: analytics/views/stats.py:393
 msgid "Direct messages"
-msgstr "다이렉트 메시지"
+msgstr "개인 메시지"
 
 #: analytics/views/stats.py:394
 msgid "Group direct messages"
-msgstr "그룹 다이렉트 메시지"
+msgstr "그룹 개인 메시지"
 
 #: analytics/views/stats.py:417
 #, python-brace-format
@@ -86,8 +86,9 @@ msgid ""
 "users to join."
 msgstr ""
 "귀하의 조직에는 남은 Zulip 라이센스가 없으므로 더 이상 새로운 사용자를 수락할 수 없습니다."
-"Please [increase the number of licenses]({billing_page_link}) or "
-"[deactivate inactive users]({deactivate_user_help_page_link}) 으로 allow new 사용자 으로 join."
+"새 사용자를 추가하려면 [라이선스 수를 늘리거나]({billing_page_link}) " 
+"[활동하지 않는 사용자를 비활성화]({deactivate_user_help_page_link})해 주세요. "
+
 
 #: corporate/lib/registration.py:42
 #, python-brace-format
@@ -95,7 +96,10 @@ msgid ""
 "Your organization has only one Zulip license remaining. You can [increase "
 "the number of licenses]({billing_page_link}) or [deactivate inactive users]"
 "({deactivate_user_help_page_link}) to allow more than one user to join."
-msgstr "Your 조직 has only one Zulip 라이선스 remaining. You can [increase the number of licenses]({billing_page_link}) or [deactivate inactive users]({deactivate_user_help_page_link}) 으로 allow more than one 사용자 으로 join."
+msgstr ""
+"조직에 남아 있는 Zulip 라이선스가 1개뿐입니다. " 
+"두 명 이상이 새로 참여할 수 있도록 하려면 [라이선스 수를 늘리거나]({billing_page_link}) " 
+"[활동하지 않는 사용자를 비활성화]({deactivate_user_help_page_link})해 주세요."
 
 #: corporate/lib/registration.py:47
 #, python-brace-format
@@ -459,7 +463,7 @@ msgstr "활성 사용자"
 
 #: templates/analytics/stats.html:40
 msgid "Daily actives"
-msgstr "하루 활동들"
+msgstr "하루 활동"
 
 #: templates/analytics/stats.html:41
 msgid "15 day actives"
@@ -467,7 +471,7 @@ msgstr "15일 활동들"
 
 #: templates/analytics/stats.html:42
 msgid "Total users"
-msgstr "전체 사용자들"
+msgstr "전체 사용자"
 
 #: templates/analytics/stats.html:50 zerver/models/custom_profile_fields.py:104
 msgid "Users"
@@ -575,7 +579,7 @@ msgstr "확인 링크가 존재하지 않습니다"
 
 #: templates/confirmation/link_does_not_exist.html:11
 msgid "Whoops. We couldn't find your confirmation link in the system."
-msgstr "오류. 우리는 이 시스템에서 너를 확인할 만한 것을 찾지 못했습니다."
+msgstr "오류. 시스템에서 당신의 확인할 만한 것을 찾지 못했습니다."
 
 #: templates/confirmation/link_does_not_exist.html:13
 #: templates/confirmation/link_malformed.html:14
@@ -595,7 +599,7 @@ msgstr "오류. 확인 링크가 만료되었거나 비활성화 되었습니다
 
 #: templates/confirmation/link_expired.html:12
 msgid "Please contact your organization administrator for a new link."
-msgstr "너의 조직 관리자에게 새로운 링크로 연락해라"
+msgstr "새 링크는 조직 관리자에게 문의하세요."
 
 #: templates/confirmation/link_malformed.html:4
 msgid "Confirmation link malformed"
@@ -603,15 +607,15 @@ msgstr "확인 링크 형식이 잘못되었습니다"
 
 #: templates/confirmation/link_malformed.html:11
 msgid "Whoops. The confirmation link is malformed."
-msgstr "오류. 이 확인 링크는 형식화되지 않았습니다."
+msgstr "오류. 확인 링크의 형식이 잘못되었습니다."
 
 #: templates/confirmation/link_malformed.html:12
 msgid ""
 "Make sure you copied the link correctly in to your browser. If you're still "
 "encountering this page, it's probably our fault. We're sorry."
-msgstr "Make sure you copied the link correctly 에서 으로 귀하의 browser. If you're still encountering this page, it's probably our fault. We're sorry."
-"너의 브라우저에 올바른 링크를 복사하는 것을 확실히 해주십시오. 이 페이지가 계"
-"속 생성될 경우, 아마도 오류가 생겼습니다. 죄송합니다."
+msgstr ""
+"링크를 브라우저에 올바르게 복사했는지 확인하세요. "
+"여전히 이 페이지가 표시된다면 저희 잘못일 것입니다. 죄송합니다."
 
 #: templates/corporate/billing/billing.html:5
 msgid "Billing"
@@ -723,13 +727,13 @@ msgstr "요청 한도를 초과했습니다."
 msgid ""
 "Your server has exceeded the limit for how often this action can be "
 "performed."
-msgstr "Your 서버 has exceeded the limit 에 대한 how often this action can be performed."
+msgstr "귀하의 서버가 이 작업을 수행할 수 있는 제한 횟수를 초과했습니다."
 
 #: templates/corporate/billing/remote_server_rate_limit_exceeded.html:15
 #: templates/zerver/portico_error_pages/rate_limit_exceeded.html:15
 #, python-format
 msgid "You can try again in %(retry_after)s seconds."
-msgstr "You can try again 에서 %(retry_after)s seconds."
+msgstr "%(retry_after)s초 후에 다시 시도할 수 있습니다."
 
 #: templates/corporate/billing/upgrade.html:5
 msgid "Upgrade"
@@ -737,7 +741,7 @@ msgstr "업그레이드"
 
 #: templates/corporate/billing/upgrade.html:350
 msgid "Send invoice and start free trial"
-msgstr "청구서를 보내고 무료 체험을 시작"
+msgstr "청구서를 보내고 무료 체험 시작"
 
 #: templates/corporate/billing/upgrade.html:352
 msgid "Send invoice"
@@ -755,7 +759,7 @@ msgstr "카테고리로 필터하기"
 #: templates/corporate/communities.html:58
 #: templates/zerver/integrations/index.html:76
 msgid "Categories"
-msgstr "카테고리들"
+msgstr "카테고리"
 
 #: templates/corporate/communities.html:60
 #: templates/zerver/integrations/index.html:78
@@ -1402,7 +1406,7 @@ msgstr "마지막으로 예비 토큰을 사용하실 수 있습니다."
 
 #: templates/two_factor/_wizard_forms.html:41
 msgid "Use backup token"
-msgstr "예비 토큰을 사용"
+msgstr "예비 토큰 사용"
 
 #: templates/zerver/accounts_accept_terms.html:4
 msgid "Accept the Terms of Service"
@@ -1425,7 +1429,9 @@ msgstr "이메일"
 msgid ""
 "I agree to the <a href=\"%(root_domain_url)s/policies/terms\" "
 "target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a>."
-msgstr "I agree 으로 the <a href=\"%(root_domain_url)s/policies/terms\" target=\"_blank\" rel=\"noopener noreferrer\">Terms 의 Service</a>."
+msgstr ""
+"<a href=\"%(root_domain_url)s/policies/terms\" 
+"target=\"_blank\" rel=\"noopener noreferrer\">서비스 약관</a>에 동의합니다."
 
 #: templates/zerver/accounts_accept_terms.html:68
 #: templates/zerver/register.html:250
@@ -1503,7 +1509,8 @@ msgstr "{org_name}의 공개 보기 | Zulip 팀 채팅"
 #, python-brace-format
 msgid ""
 "Browse the publicly accessible channels in {org_name} without logging in."
-msgstr "Browse the publicly accessible 채널 에서 {org_name} without logging in."
+msgstr ""
+"로그인하지 않고도 {org_name}에서 공개적으로 액세스할 수 있는 채널을 찾아보세요."
 
 #: templates/zerver/app/index.html:122
 msgid ""
@@ -1514,15 +1521,15 @@ msgstr "If this 메시지 does not go away, try <a class=\"reload-lnk\">reloadin
 #: templates/zerver/app/index.html:125
 msgid ""
 "Error loading Zulip. Try <a class=\"reload-lnk\">reloading</a> the page."
-msgstr "Error loading Zulip. Try <a class=\"reload-lnk\">reloading</a> the page."
+msgstr "Zulip을 로드하는 중 오류가 발생했습니다. 페이지를 <a class=\"reload-lnk\">새로고침</a>해 보세요."
 
 #: templates/zerver/app/index.html:227
 msgid "No conversations match your filters."
-msgstr "No conversations match 귀하의 filters."
+msgstr "필터와 일치하는 대화가 없습니다."
 
 #: templates/zerver/app/index.html:240
 msgid "This view is still loading messages."
-msgstr "This view is still loading 메시지."
+msgstr "아직 메시지를 로드하는 중입니다."
 
 #: templates/zerver/app/index.html:243
 msgid "Load more"
@@ -1536,17 +1543,19 @@ msgstr "이메일 주소 공개 범위 설정"
 msgid ""
 "Zulip lets you control which roles in the organization can view your email "
 "address."
-msgstr "Zulip lets you control which roles 에서 the 조직 can view 귀하의 이메일 주소."
+msgstr ""
+"Zulip을 사용하면 조직에서 이메일 주소를 볼 수 있는 역할을 제어할 수 있습니다."
 
 #: templates/zerver/change_email_address_visibility_modal.html:13
 msgid ""
 "Do you want to change the privacy setting for your email from the default "
 "configuration for this organization?"
-msgstr "Do you want 으로 change the privacy setting 에 대한 귀하의 이메일 from the default configuration 에 대한 this 조직?"
+msgstr ""
+"이 조직의 기본 구성에서 이메일의 개인 정보 보호 설정을 변경하시겠습니까?"
 
 #: templates/zerver/change_email_address_visibility_modal.html:15
 msgid "Who can access your email address"
-msgstr "누가 내 이메일 주소에 접근할 수 있나요"
+msgstr "귀하의 이메일 주소에 액세스할 수 있는 사람"
 
 #: templates/zerver/change_email_address_visibility_modal.html:22
 #, python-format
@@ -1554,7 +1563,10 @@ msgid ""
 "You can also change this setting <a href=\"%(root_domain_url)s/help/"
 "configure-email-visibility\" target=\"_blank\" rel=\"noopener "
 "noreferrer\">after you join</a>."
-msgstr "You can also change this setting <a href=\"%(root_domain_url)s/help/configure-email-visibility\" target=\"_blank\" rel=\"noopener noreferrer\">after you join</a>."
+msgstr ""
+"You can also change this setting <a href=\"%(root_domain_url)s/help/"
+"configure-email-visibility\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">after you join</a>."
 
 #: templates/zerver/close_window.html:5
 msgid "Video call ended"
@@ -1573,7 +1585,9 @@ msgstr "구성 오류"
 msgid ""
 "You are trying to log in using LDAP without creating an organization first. "
 "Please use EmailAuthBackend to create your organization and then try again."
-msgstr "You are trying 으로 로그인 using LDAP without creating an 조직 first. Please use EmailAuthBackend 으로 create 귀하의 조직 및 then try again."
+msgstr ""
+"먼저 조직을 생성하지 않고 LDAP를 사용하여 로그인을 시도하고 있습니다."
+"EmailAuthBackend를 사용하여 조직을 생성한 후 다시 시도하십시오."
 
 #: templates/zerver/config_error/remote_billing_bouncer_not_configured.html:4
 #, python-format
@@ -1581,7 +1595,10 @@ msgid ""
 "This server is not configured to use push notifications. For instructions on "
 "how to configure push notifications, please see the <a "
 "href=\"%(doc_url)s\">documentation</a>."
-msgstr "This 서버 is not configured 으로 use push notifications. For instructions 의 how 으로 configure push notifications, please see the <a href=\"%(doc_url)s\">documentation</a>."
+msgstr ""
+"This server is not configured to use push notifications. For instructions on "
+"how to configure push notifications, please see the <a "
+"href=\"%(doc_url)s\">documentation</a>."
 
 #: templates/zerver/confirm_continue_registration.html:4
 msgid "Account not found"
@@ -1625,7 +1642,10 @@ msgid ""
 "Or import from <a href=\"/help/import-from-slack\">Slack</a>, <a href=\"/"
 "help/import-from-mattermost\">Mattermost</a>, or <a href=\"/help/import-from-"
 "rocketchat\">Rocket.Chat</a>."
-msgstr "Or import from <a href=\"/help/import-from-slack\">Slack</a>, <a href=\"/help/import-from-mattermost\">Mattermost</a>, or <a href=\"/help/import-from-rocketchat\">Rocket.Chat</a>."
+msgstr ""
+"Or import from <a href=\"/help/import-from-slack\">Slack</a>, <a href=\"/"
+"help/import-from-mattermost\">Mattermost</a>, or <a href=\"/help/import-from-"
+"rocketchat\">Rocket.Chat</a>."
 
 #: templates/zerver/deactivated.html:4 templates/zerver/deactivated.html:22
 msgid "Deactivated organization"
@@ -1640,7 +1660,9 @@ msgstr "조직 주소가 변경되었습니다"
 msgid ""
 "This organization has moved to <a "
 "href=\"%(deactivated_redirect)s\">%(deactivated_redirect)s</a>."
-msgstr "This 조직 has moved 으로 <a href=\"%(deactivated_redirect)s\">%(deactivated_redirect)s</a>."
+msgstr ""
+"This organization has moved to <a "
+"href=\"%(deactivated_redirect)s\">%(deactivated_redirect)s</a>."
 
 #: templates/zerver/deactivated.html:33
 #, python-format
@@ -1648,7 +1670,10 @@ msgid ""
 "This page will automatically redirect to the <a "
 "href=\"%(auto_redirect_to)s\" id=\"deactivated-org-auto-redirect\">new URL</"
 "a> in <span id=\"deactivated-org-auto-redirect-countdown\">5</span> seconds."
-msgstr "This page will automatically redirect 으로 the <a href=\"%(auto_redirect_to)s\" id=\"deactivated-org-auto-redirect\">new URL</a> 에서 <span id=\"deactivated-org-auto-redirect-countdown\">5</span> seconds."
+msgstr ""
+"This page will automatically redirect to the <a "
+"href=\"%(auto_redirect_to)s\" id=\"deactivated-org-auto-redirect\">new URL</"
+"a> in <span id=\"deactivated-org-auto-redirect-countdown\">5</span> seconds."
 
 #: templates/zerver/deactivated.html:38
 #, fuzzy
@@ -1656,21 +1681,27 @@ msgstr "This page will automatically redirect 으로 the <a href=\"%(auto_redire
 msgid ""
 "This organization has been deactivated, and all organization data has been "
 "deleted."
-msgstr "이 조직은 비활성화되었습니다"
+msgstr ""
+"이 조직은 비활성화되었으며" 
+"모든 조직 데이터가 삭제되었습니다."
 
 #: templates/zerver/deactivated.html:40
 #, python-format
 msgid ""
 "You can <a href=\"mailto:%(support_email)s\">contact Zulip support</a> to "
 "inquire about reusing this URL for a new organization."
-msgstr "You can <a href=\"mailto:%(support_email)s\">contact Zulip support</a> 으로 inquire about reusing this URL 에 대한 a new 조직."
+msgstr ""
+"You can <a href=\"mailto:%(support_email)s\">contact Zulip support</a> to "
+"inquire about reusing this URL for a new organization."
 
 #: templates/zerver/deactivated.html:44
 #, python-format
 msgid ""
 "You can <a href=\"mailto:%(support_email)s\">contact this Zulip server's "
 "administrators</a> to inquire about reusing this URL for a new organization."
-msgstr "You can <a href=\"mailto:%(support_email)s\">contact this Zulip 서버's administrators</a> 으로 inquire about reusing this URL 에 대한 a new 조직."
+msgstr ""
+"You can <a href=\"mailto:%(support_email)s\">contact this Zulip server's "
+"administrators</a> to inquire about reusing this URL for a new organization."
 
 #: templates/zerver/deactivated.html:49
 #, fuzzy
@@ -1683,7 +1714,9 @@ msgstr "이 조직은 비활성화되었습니다"
 msgid ""
 "If you are an owner of this organization, you can <a href=\"mailto:"
 "%(support_email)s\">contact Zulip support</a> to reactivate it."
-msgstr "If you are an owner 의 this 조직, you can <a href=\"mailto:%(support_email)s\">contact Zulip support</a> 으로 다시 활성화 it."
+msgstr ""
+"If you are an owner of this organization, you can <a href=\"mailto:"
+"%(support_email)s\">contact Zulip support</a> to reactivate it."
 
 #: templates/zerver/deactivated.html:55
 #, python-format
@@ -1691,7 +1724,10 @@ msgid ""
 "If you are an owner of this organization, you can <a href=\"mailto:"
 "%(support_email)s\">contact this Zulip server's administrators</a> to "
 "reactivate it."
-msgstr "If you are an owner 의 this 조직, you can <a href=\"mailto:%(support_email)s\">contact this Zulip 서버's administrators</a> 으로 다시 활성화 it."
+msgstr ""
+"If you are an owner of this organization, you can <a href=\"mailto:"
+"%(support_email)s\">contact this Zulip server's administrators</a> to "
+"reactivate it."
 
 #: templates/zerver/desktop_login.html:5
 msgid "Finish desktop app login"
@@ -1705,11 +1741,11 @@ msgstr "데스크톱 로그인 완료"
 msgid ""
 "Use your web browser to finish logging in, then come back here to paste in "
 "your login token."
-msgstr "Use 귀하의 web browser 으로 finish logging in, then come back here 으로 paste 에서 귀하의 로그인 token."
+msgstr "웹 브라우저에서 로그인을 마친 뒤, 이곳으로 돌아와 로그인 토큰을 붙여 넣어 주세요."
 
 #: templates/zerver/desktop_login.html:18
 msgid "Paste token here"
-msgstr "여기에 토큰 붙여넣기"
+msgstr "여기에 토큰을 붙여 넣으세요"
 
 #: templates/zerver/desktop_login.html:20
 msgid "Finish"
@@ -1730,7 +1766,8 @@ msgstr "데스크톱 앱에 로그인"
 #: templates/zerver/desktop_redirect.html:12
 msgid ""
 "Copy this login token and return to your Zulip app to finish logging in:"
-msgstr "Copy this 로그인 token 및 return 으로 귀하의 Zulip app 으로 finish logging in:"
+msgstr ""
+"로그인 토큰을 복사하고 Zulip 앱으로 돌아가서 로그인을 완료하세요:"
 
 #: templates/zerver/desktop_redirect.html:17
 msgid "Copy"
@@ -1738,7 +1775,7 @@ msgstr "복사"
 
 #: templates/zerver/desktop_redirect.html:19
 msgid "You may then close this window."
-msgstr "그 후 이 창을 닫아도 됩니다."
+msgstr "완료 후 이 창을 닫아도 됩니다."
 
 #: templates/zerver/desktop_redirect.html:20
 msgid "Or, continue in your browser."
@@ -1758,7 +1795,7 @@ msgstr "관리자"
 
 #: templates/zerver/development/dev_login.html:60 zerver/models/groups.py:25
 msgid "Moderators"
-msgstr "중재자들"
+msgstr "운영자"
 
 #: templates/zerver/development/dev_login.html:71
 msgid "Guest users"
@@ -1789,7 +1826,7 @@ msgstr "Zulip"
 
 #: templates/zerver/digest_base.html:5
 msgid "Digest"
-msgstr "다이제스트"
+msgstr "요"
 
 #: templates/zerver/emails/account_registered.html:11
 #, python-format
@@ -1797,14 +1834,19 @@ msgid ""
 "Congratulations, you have created a new Zulip demo organization. Note that "
 "this organization will be automatically deleted in 30 days. Learn more about "
 "demo organizations <a href=\"%(demo_organizations_help_link)s\">here</a>!"
-msgstr "Congratulations, you have created a new Zulip demo 조직. Note that this 조직 will be automatically deleted 에서 30 days. Learn more about demo 조직 <a href=\"%(demo_organizations_help_link)s\">here</a>!"
+msgstr ""
+"Congratulations, you have created a new Zulip demo organization. Note that "
+"this organization will be automatically deleted in 30 days. Learn more about "
+"demo organizations <a href=\"%(demo_organizations_help_link)s\">here</a>!"
 
 #: templates/zerver/emails/account_registered.html:19
 #, python-format
 msgid ""
 "Congratulations, you have created a new Zulip organization: "
 "<b>%(realm_name)s</b>."
-msgstr "Congratulations, you have created a new Zulip 조직: <b>%(realm_name)s</b>."
+msgstr ""
+"축하합니다. 새로운 Zulip 조직을 만들었습니다: "
+"<b>%(realm_name)s</b>."
 
 #: templates/zerver/emails/account_registered.html:24
 #: templates/zerver/emails/account_registered.txt:1
@@ -1821,7 +1863,9 @@ msgstr "Zulip 조직 <b>%(realm_name)s</b>에 참여했습니다."
 msgid ""
 "You will use the following info to log into the Zulip web, <a "
 "href=\"%(apps_page_link)s\">mobile and desktop</a> apps:"
-msgstr "You will use the following info 으로 log into the Zulip web, <a href=\"%(apps_page_link)s\">mobile 및 desktop</a> apps:"
+msgstr ""
+"다음 정보를 사용하여 Zulip 웹에 로그인합니다, <a "
+"href=\"%(apps_page_link)s\">모바일 및 데스크톱</a> apps:"
 
 #: templates/zerver/emails/account_registered.html:34
 #: templates/zerver/emails/account_registered.txt:16
@@ -1857,7 +1901,8 @@ msgstr "조직으로 이동"
 msgid ""
 "If you are new to Zulip, check out our <a "
 "href=\"%(getting_user_started_link)s\">getting started guide</a>!"
-msgstr "If you are new 으로 Zulip, check out our <a href=\"%(getting_user_started_link)s\">getting started 가이드</a>!"
+msgstr "If you are new to Zulip, check out our <a "
+"href=\"%(getting_user_started_link)s\">getting started guide</a>!"
 
 #: templates/zerver/emails/account_registered.html:51
 #, python-format
@@ -1865,14 +1910,19 @@ msgid ""
 "We also have a guide for <a "
 "href=\"%(getting_organization_started_link)s\">moving your organization to "
 "Zulip</a>."
-msgstr "We also have a 가이드 에 대한 <a href=\"%(getting_organization_started_link)s\">moving 귀하의 조직 으로 Zulip</a>."
+msgstr ""
+"We also have a guide for <a "
+"href=\"%(getting_organization_started_link)s\">moving your organization to "
+"Zulip</a>."
 
 #: templates/zerver/emails/account_registered.html:57
 #, python-format
 msgid ""
 "Questions? <a href=\"mailto:%(support_email)s\">Contact us</a> — we'd love "
 "to help!"
-msgstr "Questions? <a href=\"mailto:%(support_email)s\">Contact us</a> â we'd love 으로 help!"
+msgstr ""
+"Questions? <a href=\"mailto:%(support_email)s\">Contact us</a> — we'd love "
+"to help!"
 
 #: templates/zerver/emails/account_registered.subject.txt:2
 #, python-format
@@ -1890,13 +1940,17 @@ msgid ""
 "Congratulations, you have created a new demo Zulip organization. Note that "
 "this organization will be automatically deleted in 30 days. Learn more about "
 "demo organizations here: %(demo_organizations_help_link)s!"
-msgstr "Congratulations, you have created a new demo Zulip 조직. Note that this 조직 will be automatically deleted 에서 30 days. Learn more about demo 조직 here: %(demo_organizations_help_link)s!"
+msgstr ""
+"축하합니다. 새로운 데모 Zulip 조직을 만들었습니다. "
+"이 조직은 30일 후에 자동으로 삭제됩니다. "
+"여기에서 데모 조직에 대해 자세히 알아보세요: %(demo_organizations_help_link)s!"
 
 #: templates/zerver/emails/account_registered.txt:7
 #, python-format
 msgid ""
 "Congratulations, you have created a new Zulip organization: %(realm_name)s."
-msgstr "Congratulations, you have created a new Zulip 조직: %(realm_name)s."
+msgstr ""
+"축하합니다. 새로운 Zulip 조직을 만들었습니다: %(realm_name)s."
 
 #: templates/zerver/emails/account_registered.txt:10
 #, python-format
@@ -1908,26 +1962,32 @@ msgstr "Zulip 조직 %(realm_name)s에 참여했습니다."
 msgid ""
 "You will use the following info to log into the Zulip web, mobile and "
 "desktop apps (%(apps_page_link)s):"
-msgstr "You will use the following info 으로 log into the Zulip web, mobile 및 desktop apps (%(apps_page_link)s):"
+msgstr ""
+"다음 정보를 사용하여 Zulip 웹, 모바일 및 데스크톱 앱에 로그인합니다. "
+"(%(apps_page_link)s):"
 
 #: templates/zerver/emails/account_registered.txt:29
 #, python-format
 msgid ""
 "If you are new to Zulip, check out our getting started guide "
 "(%(getting_user_started_link)s)!"
-msgstr "If you are new 으로 Zulip, check out our getting started 가이드 (%(getting_user_started_link)s)!"
+msgstr ""
+"Zulip을 처음 사용하는 경우 시작 가이드를 확인하세요. "
+"(%(getting_user_started_link)s)!"
 
 #: templates/zerver/emails/account_registered.txt:31
 #, python-format
 msgid ""
 "We also have a guide for moving your organization to Zulip "
 "(%(getting_organization_started_link)s)."
-msgstr "We also have a 가이드 에 대한 moving 귀하의 조직 으로 Zulip (%(getting_organization_started_link)s)."
+msgstr ""
+"귀하의 조직을 Zulip으로 이전하기 위한 가이드도 있습니다 "
+"(%(getting_organization_started_link)s)."
 
 #: templates/zerver/emails/account_registered.txt:36
 #, python-format
 msgid "Questions? Contact us at %(support_email)s — we'd love to help!"
-msgstr "Questions? Contact us at %(support_email)s â we'd love 으로 help!"
+msgstr "질문이 있으신가요? %(support_email)s로 문의해 주세요. 기꺼이 도와드리겠습니다!"
 
 #: templates/zerver/emails/account_registered.txt:38
 #: templates/zerver/emails/confirm_registration.txt:21
@@ -1939,7 +1999,7 @@ msgstr "Questions? Contact us at %(support_email)s â we'd love 으로 help!
 msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at %(support_email)s."
-msgstr "If you have any questions, please contact this Zulip 서버's administrators at %(support_email)s."
+msgstr "질문이 있는 경우 %(support_email)s로 Zulip 서버 관리자에게 문의하세요."
 
 #: templates/zerver/emails/confirm_demo_organization_email.html:8
 #: templates/zerver/emails/confirm_demo_organization_email.txt:1
@@ -1957,11 +2017,14 @@ msgid ""
 "We received a request to add the email address %(new_email)s to your Zulip "
 "demo organization account on %(realm_url)s. To confirm this update and set a "
 "password for this account, please click below:"
-msgstr "We received a 요청 으로 add the 이메일 주소 %(new_email)s 으로 귀하의 Zulip demo 조직 계정 의 %(realm_url)s. To 확인 this update 및 set a 비밀번호 에 대한 this 계정, please click below:"
+msgstr ""
+"We received a request to add the email address %(new_email)s to your Zulip "
+"demo organization account on %(realm_url)s. To confirm this update and set a "
+"password for this account, please click below:"
 
 #: templates/zerver/emails/confirm_demo_organization_email.html:11
 msgid "Confirm and set password"
-msgstr "확인 및 set 비밀번호"
+msgstr "비밀번호 확인 및 설정"
 
 #: templates/zerver/emails/confirm_demo_organization_email.html:13
 #: templates/zerver/emails/confirm_new_email.html:13
@@ -1969,7 +2032,8 @@ msgstr "확인 및 set 비밀번호"
 msgid ""
 "If you did not request this change, please contact us immediately at "
 "%(support_email)s."
-msgstr "If you did not 요청 this change, please contact us immediately at %(support_email)s."
+msgstr ""
+"이 변경을 요청하지 않으셨다면 즉시 %(support_email)s로 문의해 주세요."
 
 #: templates/zerver/emails/confirm_demo_organization_email.subject.txt:1
 msgid "Verify your new email address for your demo Zulip organization"
@@ -1981,7 +2045,8 @@ msgstr "데모 Zulip 조직의 새 이메일 주소를 확인하세요"
 msgid ""
 "If you did not request this change, please contact us immediately at "
 "<%(support_email)s>."
-msgstr "If you did not 요청 this change, please contact us immediately at <%(support_email)s>."
+msgstr ""
+"이 변경을 요청하지 않으셨다면 즉시 %(support_email)s로 문의해 주세요."
 
 #: templates/zerver/emails/confirm_new_email.html:10
 #: templates/zerver/emails/confirm_new_email.txt:4
@@ -1990,7 +2055,10 @@ msgid ""
 "We received a request to change the email address for the Zulip account on "
 "%(realm_url)s from %(old_email)s to %(new_email)s. To confirm this change, "
 "please click below:"
-msgstr "We received a 요청 으로 change the 이메일 주소 에 대한 the Zulip 계정 의 %(realm_url)s from %(old_email)s 으로 %(new_email)s. To 확인 this change, please click below:"
+msgstr ""
+"We received a request to change the email address for the Zulip account on "
+"%(realm_url)s from %(old_email)s to %(new_email)s. To confirm this change, "
+"please click below:"
 
 #: templates/zerver/emails/confirm_new_email.html:11
 msgid "Confirm email change"
@@ -2004,7 +2072,7 @@ msgstr "%(organization_host)s의 새 이메일 주소를 확인하세요"
 #: templates/zerver/emails/confirm_registration.html:10
 #: templates/zerver/emails/confirm_registration.txt:2
 msgid "You have requested a new Zulip organization:"
-msgstr "You have requested a new Zulip 조직:"
+msgstr "새로운 Zulip 조직을 요청하셨습니다:"
 
 #: templates/zerver/emails/confirm_registration.html:13
 #: templates/zerver/emails/confirm_registration.txt:5
@@ -2022,7 +2090,9 @@ msgstr "귀하는 최근에 Zulip에 가입하셨습니다. 훌륭합니다!"
 msgid ""
 "Click the button below to create the organization and register your account. "
 "You'll be able to update the information above if you like."
-msgstr "아래 버튼을 클릭하여 create the 조직 및 register 귀하의 계정. You'll be able 으로 update the information above if you like."
+msgstr ""
+"아래 버튼을 클릭하시면 기관을 생성하고 계정을 등록하실 수 있습니다."
+"원하시면 위의 정보를 업데이트하실 수 있습니다."
 
 #: templates/zerver/emails/confirm_registration.html:23
 msgid "Click the button below to complete registration."
@@ -2055,7 +2125,9 @@ msgstr "아래 링크를 클릭하여 등록을 완료하세요."
 msgid ""
 "Do you have questions or feedback to share? Contact us at %(support_email)s "
 "— we'd love to help!"
-msgstr "Do you have questions or feedback 으로 share? Contact us at %(support_email)s â we'd love 으로 help!"
+msgstr ""
+"Do you have questions or feedback to share? Contact us at %(support_email)s "
+"— we'd love to help!"
 
 #: templates/zerver/emails/custom_email_base.pre.html:19
 #: templates/zerver/emails/custom_email_base.pre.manage_preferences_block.txt:8
@@ -2075,12 +2147,14 @@ msgstr "마케팅 이메일 수신 거부"
 msgid ""
 "Your Zulip account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
 "deactivated, and you will no longer be able to log in."
-msgstr "Your Zulip 계정 의 <a href=\"%(realm_url)s\">%(realm_url)s</a> has been deactivated, 및 you will no longer be able 으로 로그인."
+msgstr ""
+"Your Zulip account on <a href=\"%(realm_url)s\">%(realm_url)s</a> has been "
+"deactivated, and you will no longer be able to log in."
 
 #: templates/zerver/emails/deactivate.html:15
 #: templates/zerver/emails/deactivate.txt:6
 msgid "The administrators provided the following comment:"
-msgstr "The administrators provided the following comment:"
+msgstr "관리자는 다음과 같은 의견을 제공했습니다:"
 
 #: templates/zerver/emails/deactivate.subject.txt:1
 #, python-format
@@ -2092,7 +2166,9 @@ msgstr "%(realm_name)s의 계정 비활성화 알림"
 msgid ""
 "Your Zulip account on %(realm_url)s has been deactivated, and you will no "
 "longer be able to log in."
-msgstr "Your Zulip 계정 의 %(realm_url)s has been deactivated, 및 you will no longer be able 으로 로그인."
+msgstr ""
+"Your Zulip account on %(realm_url)s has been deactivated, and you will no "
+"longer be able to log in."
 
 #: templates/zerver/emails/digest.html:28 templates/zerver/emails/digest.txt:9
 msgid "New channels"
@@ -2104,21 +2180,28 @@ msgid ""
 "You have %(new_messages_count)s new messages, and there are "
 "%(new_streams_count)s new channels in <a "
 "href=\"%(realm_url)s\">%(realm_name)s</a>."
-msgstr "You have %(new_messages_count)s new 메시지, 및 there are %(new_streams_count)s new 채널 에서 <a href=\"%(realm_url)s\">%(realm_name)s</a>."
+msgstr ""
+"You have %(new_messages_count)s new messages, and there are "
+"%(new_streams_count)s new channels in <a "
+"href=\"%(realm_url)s\">%(realm_name)s</a>."
 
 #: templates/zerver/emails/digest.html:37
 #, python-format
 msgid ""
 "You have %(new_messages_count)s new messages in <a "
 "href=\"%(realm_url)s\">%(realm_name)s</a>."
-msgstr "<a href=\"%(realm_url)s\">%(realm_name)s</a>에 %(new_messages_count)s개의 새 메시지가 있습니다."
+msgstr ""
+"You have %(new_messages_count)s new messages in <a "
+"href=\"%(realm_url)s\">%(realm_name)s</a>."
 
 #: templates/zerver/emails/digest.html:39
 #, python-format
 msgid ""
 "There are %(new_streams_count)s new channels in <a "
 "href=\"%(realm_url)s\">%(realm_name)s</a>."
-msgstr "<a href=\"%(realm_url)s\">%(realm_name)s</a>에 %(new_streams_count)s개의 새 채널이 있습니다."
+msgstr ""
+"There are %(new_streams_count)s new channels in <a "
+"href=\"%(realm_url)s\">%(realm_name)s</a>."
 
 #: templates/zerver/emails/digest.html:44
 #: templates/zerver/emails/missed_message.html:17
@@ -2127,7 +2210,10 @@ msgid ""
 "This email does not include message content because your organization <a "
 "class=\"content_disabled_help_link\" href=\"%(help_url)s\">hides message "
 "content</a> in email notifications."
-msgstr "This 이메일 does not include 메시지 content because 귀하의 조직 <a class=\"content_disabled_help_link\" href=\"%(help_url)s\">hides 메시지 content</a> 에서 이메일 notifications."
+msgstr ""
+"This email does not include message content because your organization <a "
+"class=\"content_disabled_help_link\" href=\"%(help_url)s\">hides message "
+"content</a> in email notifications."
 
 #: templates/zerver/emails/digest.html:46
 #: templates/zerver/emails/missed_message.html:19
@@ -2136,7 +2222,10 @@ msgid ""
 "This email does not include message content because you have chosen to <a "
 "class=\"content_disabled_help_link\" href=\"%(help_url)s\">hide message "
 "content</a> in email notifications."
-msgstr "This 이메일 does not include 메시지 content because you have chosen 으로 <a class=\"content_disabled_help_link\" href=\"%(help_url)s\">hide 메시지 content</a> 에서 이메일 notifications."
+msgstr ""
+"This email does not include message content because you have chosen to <a "
+"class=\"content_disabled_help_link\" href=\"%(help_url)s\">hide message "
+"content</a> in email notifications."
 
 #: templates/zerver/emails/digest.html:50
 #, fuzzy, python-format
@@ -2146,19 +2235,21 @@ msgstr "귀하의 새 비밀번호로 <a href=\"%(realm_url)s\">로그인</a>하
 
 #: templates/zerver/emails/digest.html:56
 msgid "Unsubscribe from digest emails"
-msgstr "다이제스트 이메일 수신 거부"
+msgstr "요약 이메일 수신 거부"
 
 #: templates/zerver/emails/digest.subject.txt:1
 #, python-format
 msgid "Zulip digest for %(realm_name)s"
-msgstr "%(realm_name)s의 Zulip 다이제스트"
+msgstr "%(realm_name)s의 Zulip 요약"
 
 #: templates/zerver/emails/digest.txt:14
 #, python-format
 msgid ""
 "You have %(new_messages_count)s new messages, and there are "
 "%(new_streams_count)s new channels in %(realm_name)s."
-msgstr "You have %(new_messages_count)s new 메시지, 및 there are %(new_streams_count)s new 채널 에서 %(realm_name)s."
+msgstr ""
+"You have %(new_messages_count)s new messages, and there are "
+"%(new_streams_count)s new channels in %(realm_name)s."
 
 #: templates/zerver/emails/digest.txt:16
 #, python-format
@@ -2177,7 +2268,10 @@ msgid ""
 "This email does not include message content because your organization hides "
 "message content in email notifications. See %(hide_content_url)s for more "
 "details."
-msgstr "This 이메일 does not include 메시지 content because 귀하의 조직 hides 메시지 content 에서 이메일 notifications. See %(hide_content_url)s 에 대한 more details."
+msgstr ""
+"This email does not include message content because your organization hides "
+"message content in email notifications. See %(hide_content_url)s for more "
+"details."
 
 #: templates/zerver/emails/digest.txt:26
 #: templates/zerver/emails/missed_message.txt:15
@@ -2185,7 +2279,9 @@ msgstr "This 이메일 does not include 메시지 content because 귀하의 조�
 msgid ""
 "This email does not include message content because you have chosen to hide "
 "message content in email notifications. See %(help_url)s for more details."
-msgstr "This 이메일 does not include 메시지 content because you have chosen 으로 hide 메시지 content 에서 이메일 notifications. See %(help_url)s 에 대한 more details."
+msgstr ""
+"이메일 알림에서 메시지 내용을 숨기도록 선택했기 때문에 이 이메일에는 메시지 내용이 포함되지 않습니다. " 
+"자세한 내용은 %(help_url)s를 참조하세요."
 
 #: templates/zerver/emails/digest.txt:32
 #, python-format
@@ -2217,7 +2313,9 @@ msgstr "요청해 주셔서 감사합니다!"
 msgid ""
 "Your email address %(email)s has accounts with the following Zulip Cloud "
 "organizations:"
-msgstr "Your 이메일 주소 %(email)s has 계정 와(과) 함께 the following Zulip Cloud 조직:"
+msgstr ""
+"Your email address %(email)s has accounts with the following Zulip Cloud "
+"organizations:"
 
 #: templates/zerver/emails/find_team.html:14
 #: templates/zerver/emails/find_team.txt:7
@@ -2225,14 +2323,18 @@ msgstr "Your 이메일 주소 %(email)s has 계정 와(과) 함께 the following
 msgid ""
 "Your email address %(email)s has accounts with the following Zulip "
 "organizations hosted by %(external_host)s:"
-msgstr "Your 이메일 주소 %(email)s has 계정 와(과) 함께 the following Zulip 조직 hosted by %(external_host)s:"
+msgstr ""
+"Your email address %(email)s has accounts with the following Zulip "
+"organizations hosted by %(external_host)s:"
 
 #: templates/zerver/emails/find_team.html:24
 #, python-format
 msgid ""
 "If you have trouble logging in, you can <a "
 "href=\"%(help_reset_password_link)s\">reset your password</a>."
-msgstr "If you have trouble logging in, you can <a href=\"%(help_reset_password_link)s\">재설정 귀하의 비밀번호</a>."
+msgstr ""
+"If you have trouble logging in, you can <a "
+"href=\"%(help_reset_password_link)s\">reset your password</a>."
 
 #: templates/zerver/emails/find_team.html:28
 #: templates/zerver/emails/find_team.txt:21
@@ -2243,7 +2345,7 @@ msgstr "이 이메일 주소에 연결된 Zulip 계정 목록을 요청하셨습
 #: templates/zerver/emails/find_team.html:30
 #: templates/zerver/emails/find_team.txt:21
 msgid "Unfortunately, no Zulip Cloud accounts were found."
-msgstr "안타깝게도 Zulip Cloud 계정을 찾을 수 없습니다."
+msgstr "Zulip Cloud 계정을 찾을 수 없습니다."
 
 #: templates/zerver/emails/find_team.html:32
 #: templates/zerver/emails/find_team.txt:28
@@ -2251,7 +2353,9 @@ msgstr "안타깝게도 Zulip Cloud 계정을 찾을 수 없습니다."
 msgid ""
 "Unfortunately, no accounts were found in Zulip organizations hosted by "
 "%(external_host)s."
-msgstr "Unfortunately, no 계정 were found 에서 Zulip 조직 hosted by %(external_host)s."
+msgstr ""
+"Unfortunately, no accounts were found in Zulip organizations hosted by "
+"%(external_host)s."
 
 #: templates/zerver/emails/find_team.html:37
 #, python-format
@@ -2259,7 +2363,10 @@ msgid ""
 "You can <a href = \"%(find_accounts_link)s\" >check for accounts</a> with "
 "another email, or <a href =\"%(help_logging_in_link)s\">try another way</a> "
 "to find your account."
-msgstr "You can <a href = \"%(find_accounts_link)s\" >check 에 대한 계정</a> 와(과) 함께 another 이메일, or <a href =\"%(help_logging_in_link)s\">try another way</a> 으로 find 귀하의 계정."
+msgstr ""
+"You can <a href = \"%(find_accounts_link)s\" >check for accounts</a> with "
+"another email, or <a href =\"%(help_logging_in_link)s\">try another way</a> "
+"to find your account."
 
 #: templates/zerver/emails/find_team.html:38
 #: templates/zerver/emails/find_team.txt:26
@@ -2285,7 +2392,9 @@ msgstr "로그인에 문제가 있으면 비밀번호를 재설정할 수 있습
 msgid ""
 "You can check for accounts with another email (%(find_accounts_link)s), or "
 "try another way to find your account (%(help_logging_in_link)s)."
-msgstr "You can check 에 대한 계정 와(과) 함께 another 이메일 (%(find_accounts_link)s), or try another way 으로 find 귀하의 계정 (%(help_logging_in_link)s)."
+msgstr ""
+"You can check for accounts with another email (%(find_accounts_link)s), or "
+"try another way to find your account (%(help_logging_in_link)s)."
 
 #: templates/zerver/emails/invitation.html:9
 #: templates/zerver/emails/invitation.txt:1
@@ -2297,7 +2406,9 @@ msgstr "안녕하세요,"
 msgid ""
 "%(referrer_name)s wants you to join them on Zulip &mdash; the team "
 "communication tool designed for productivity."
-msgstr "%(referrer_name)s wants you 으로 join them 의 Zulip &mdash; the team communication tool designed 에 대한 productivity."
+msgstr ""
+"%(referrer_name)s wants you to join them on Zulip &mdash; the team "
+"communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation.html:15
 #: templates/zerver/emails/invitation_reminder.html:13
@@ -2314,7 +2425,9 @@ msgstr "%(referrer_full_name)s님이 %(referrer_realm_name)s에 초대했습니�
 msgid ""
 "%(referrer_full_name)s (%(referrer_email)s) wants you to join them on Zulip "
 "-- the team communication tool designed for productivity."
-msgstr "%(referrer_full_name)s (%(referrer_email)s) wants you 으로 join them 의 Zulip -- the team communication tool designed 에 대한 productivity."
+msgstr ""
+"%(referrer_full_name)s (%(referrer_email)s) wants you to join them on Zulip "
+"-- the team communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation.txt:5
 #: templates/zerver/emails/invitation_reminder.txt:5
@@ -2331,7 +2444,9 @@ msgstr "다시 한 번 안녕하십니까,"
 msgid ""
 "This is a friendly reminder that %(referrer_name)s wants you to join them on "
 "Zulip &mdash; the team communication tool designed for productivity."
-msgstr "This is a friendly reminder that %(referrer_name)s wants you 으로 join them 의 Zulip &mdash; the team communication tool designed 에 대한 productivity."
+msgstr ""
+"This is a friendly reminder that %(referrer_name)s wants you to join them on "
+"Zulip &mdash; the team communication tool designed for productivity."
 
 #: templates/zerver/emails/invitation_reminder.html:18
 #: templates/zerver/emails/invitation_reminder.txt:8
@@ -2344,7 +2459,9 @@ msgstr "이 초대에 대해 받게 되는 마지막 알림입니다."
 msgid ""
 "This invitation expires in two days. If the invitation expires, you'll need "
 "to ask %(referrer_name)s for another one."
-msgstr "This invitation expires 에서 two days. If the invitation expires, you'll need 으로 ask %(referrer_name)s 에 대한 another one."
+msgstr ""
+"이 초대는 이틀 후에 만료됩니다. 초대가 만료되면 " 
+"%(referrer_name)s에게 다른 초대를 요청해야 합니다"
 
 #: templates/zerver/emails/invitation_reminder.subject.txt:1
 #, python-format
@@ -2357,33 +2474,41 @@ msgid ""
 "This is a friendly reminder that %(referrer_name)s (%(referrer_email)s) "
 "wants you to join them on Zulip -- the team communication tool designed for "
 "productivity."
-msgstr "This is a friendly reminder that %(referrer_name)s (%(referrer_email)s) wants you 으로 join them 의 Zulip -- the team communication tool designed 에 대한 productivity."
+msgstr ""
+"This is a friendly reminder that %(referrer_name)s (%(referrer_email)s) "
+"wants you to join them on Zulip -- the team communication tool designed for "
+"productivity."
 
 #: templates/zerver/emails/macros.html:14
 #, python-format
 msgid ""
 "If you have any questions, please contact this Zulip server's administrators "
 "at <a href=\"mailto:%(email)s\">%(email)s</a>."
-msgstr "If you have any questions, please contact this Zulip 서버's administrators at <a href=\"mailto:%(email)s\">%(email)s</a>."
+msgstr ""
+"궁금한 점이 있으면 Zulip 서버 관리자에게 문의하세요. "
+"<a href=\"mailto:%(email)s\">%(email)s</a>."
 
 #: templates/zerver/emails/macros.html:18
 #, python-format
 msgid ""
 "Do you have questions or feedback to share? <a href=\"mailto:"
 "%(email)s\">Contact us</a> — we'd love to help!"
-msgstr "Do you have questions or feedback 으로 share? <a href=\"mailto:%(email)s\">Contact us</a> â we'd love 으로 help!"
+msgstr ""
+"Do you have questions or feedback to share? <a href=\"mailto:"
+"%(email)s\">Contact us</a> — we'd love to help!"
 
 #: templates/zerver/emails/missed_message.html:29
 #: templates/zerver/emails/missed_message.txt:23
 msgid "You are receiving this because you were personally mentioned."
-msgstr "개인 멘션을 받았기 때문에 이 알림을 받았습니다."
+msgstr "직접 언급되어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:31
 #: templates/zerver/emails/missed_message.txt:25
 #, python-format
 msgid ""
 "You are receiving this because @%(mentioned_user_group_name)s was mentioned."
-msgstr "You are receiving this because @%(mentioned_user_group_name)s was mentioned."
+msgstr ""
+"@%(mentioned_user_group_name)s이(가) 언급되어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:33
 #: templates/zerver/emails/missed_message.html:37
@@ -2393,28 +2518,33 @@ msgstr "You are receiving this because @%(mentioned_user_group_name)s was mentio
 msgid ""
 "You are receiving this because all topic participants were mentioned in "
 "#%(channel_name)s > %(topic_name)s."
-msgstr "You are receiving this because all 토픽 participants were mentioned 에서 #%(channel_name)s > %(topic_name)s."
+msgstr ""
+"#%(channel_name)s > %(topic_name)s에서 이 주제의 모든 참여자가 언급되어 "
+"이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:35
 #: templates/zerver/emails/missed_message.txt:29
 msgid ""
 "You are receiving this because you have wildcard mention notifications "
 "enabled for topics you follow."
-msgstr "You are receiving this because you have wildcard mention notifications enabled 에 대한 토픽 you follow."
+msgstr ""
+"팔로우하는 주제에서 전체 언급 알림을 켜 두어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:39
 #: templates/zerver/emails/missed_message.txt:33
 #, python-format
 msgid ""
 "You are receiving this because everyone was mentioned in #%(channel_name)s."
-msgstr "You are receiving this because everyone was mentioned 에서 #%(channel_name)s."
+msgstr ""
+"#%(channel_name)s에서 전체 언급이 있어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:41
 #: templates/zerver/emails/missed_message.txt:35
 msgid ""
 "You are receiving this because you have email notifications enabled for "
 "topics you follow."
-msgstr "You are receiving this because you have 이메일 notifications enabled 에 대한 토픽 you follow."
+msgstr ""
+"팔로우하는 주제의 이메일 알림을 켜 두어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:43
 #: templates/zerver/emails/missed_message.txt:37
@@ -2422,7 +2552,8 @@ msgstr "You are receiving this because you have 이메일 notifications enabled 
 msgid ""
 "You are receiving this because you have email notifications enabled for "
 "#%(channel_name)s."
-msgstr "You are receiving this because you have 이메일 notifications enabled 에 대한 #%(channel_name)s."
+msgstr ""
+"#%(channel_name)s의 이메일 알림을 켜 두어 이 메시지를 받았습니다."
 
 #: templates/zerver/emails/missed_message.html:46
 #, python-format
@@ -2430,38 +2561,47 @@ msgid ""
 "Reply to this email directly, <a href=\"%(narrow_url)s\">view it in "
 "%(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage email "
 "preferences</a>."
-msgstr "Reply 으로 this 이메일 directly, <a href=\"%(narrow_url)s\">view it 에서 %(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage 이메일 preferences</a>."
+msgstr ""
+"Reply to this email directly, <a href=\"%(narrow_url)s\">view it in "
+"%(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage email "
+"preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:48
 #, python-format
 msgid ""
 "<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
-msgstr "<a href=\"%(narrow_url)s\">View or reply 에서 %(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage 이메일 preferences</a>."
+msgstr ""
+"<a href=\"%(narrow_url)s\">View or reply in %(realm_name)s Zulip</a>, or <a "
+"href=\"%(notif_url)s\">manage email preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:50
 #, python-format
 msgid ""
 "<a href=\"%(narrow_url)s\">Reply in %(realm_name)s Zulip</a>, or <a "
 "href=\"%(notif_url)s\">manage email preferences</a>."
-msgstr "<a href=\"%(narrow_url)s\">Reply 에서 %(realm_name)s Zulip</a>, or <a href=\"%(notif_url)s\">manage 이메일 preferences</a>."
+msgstr ""
+"<a href=\"%(narrow_url)s\">Reply in %(realm_name)s Zulip</a>, or <a "
+"href=\"%(notif_url)s\">manage email preferences</a>."
 
 #: templates/zerver/emails/missed_message.html:52
 #, python-format
 msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails (<a href=\"%(url)s\">help</a>)."
-msgstr "Do not reply 으로 this 이메일. This Zulip 서버 is not configured 으로 accept incoming emails (<a href=\"%(url)s\">help</a>)."
+msgstr ""
+"Do not reply to this email. This Zulip server is not configured to accept "
+"incoming emails (<a href=\"%(url)s\">help</a>)."
 
 #: templates/zerver/emails/missed_message.subject.txt:2
 #, python-format
 msgid "Group DMs with %(direct_message_group_display_name)s"
-msgstr "%(direct_message_group_display_name)s님과의 그룹 다이렉트 메시지"
+msgstr "%(direct_message_group_display_name)s님과의 그룹 개인 메시지"
 
 #: templates/zerver/emails/missed_message.subject.txt:3
 #, python-format
 msgid "DMs with %(sender_str)s"
-msgstr "%(sender_str)s님과의 다이렉트 메시지"
+msgstr "%(sender_str)s님과의 개인 메시지"
 
 #: templates/zerver/emails/missed_message.subject.txt:12
 #, python-format
@@ -2491,7 +2631,8 @@ msgstr "%(realm_name)s Zulip에서 답장하세요:"
 msgid ""
 "Do not reply to this email. This Zulip server is not configured to accept "
 "incoming emails. Help:"
-msgstr "Do not reply 으로 this 이메일. This Zulip 서버 is not configured 으로 accept incoming emails. Help:"
+msgstr "이 이메일에 답장하지 마세요. Zulip 서버는 수신 이메일을 수락하도록 "
+"구성되어 있지 않습니다. Help:"
 
 #: templates/zerver/emails/notify_change_in_email.html:10
 #, python-format
@@ -2499,7 +2640,10 @@ msgid ""
 "The email associated with your Zulip account was recently changed to "
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at %(support_email)s."
-msgstr "The 이메일 associated 와(과) 함께 귀하의 Zulip 계정 was recently changed 으로 %(new_email)s. If you did not 요청 this change, please contact us immediately at %(support_email)s."
+msgstr ""
+"The email associated with your Zulip account was recently changed to "
+"%(new_email)s. If you did not request this change, please contact us "
+"immediately at %(support_email)s."
 
 #: templates/zerver/emails/notify_change_in_email.html:13
 #: templates/zerver/emails/notify_change_in_email.txt:6
@@ -2522,13 +2666,17 @@ msgid ""
 "The email associated with your Zulip account was recently changed to "
 "%(new_email)s. If you did not request this change, please contact us "
 "immediately at <%(support_email)s>."
-msgstr "The 이메일 associated 와(과) 함께 귀하의 Zulip 계정 was recently changed 으로 %(new_email)s. If you did not 요청 this change, please contact us immediately at <%(support_email)s>."
+msgstr ""
+"The email associated with your Zulip account was recently changed to "
+"%(new_email)s. If you did not request this change, please contact us "
+"immediately at <%(support_email)s>."
 
 #: templates/zerver/emails/notify_new_login.html:4
 #, python-format
 msgid ""
 "Organization: %(organization_url)s Time: %(login_time)s Email: %(user_email)s"
-msgstr "조직: %(organization_url)s Time: %(login_time)s Email: %(user_email)s"
+msgstr ""
+"조직: %(organization_url)s 시간: %(login_time)s Email: %(user_email)s"
 
 #: templates/zerver/emails/notify_new_login.html:12
 #: templates/zerver/emails/notify_new_login.txt:1
@@ -2575,7 +2723,10 @@ msgid ""
 "If you do not recognize this login, or think your account may have been "
 "compromised, please <a href=\"%(reset_link)s\">reset your password</a> or "
 "contact us immediately at %(support_email)s."
-msgstr "If you do not recognize this 로그인, or think 귀하의 계정 may have been compromised, please <a href=\"%(reset_link)s\">재설정 귀하의 비밀번호</a> or contact us immediately at %(support_email)s."
+msgstr ""
+"If you do not recognize this login, or think your account may have been "
+"compromised, please <a href=\"%(reset_link)s\">reset your password</a> or "
+"contact us immediately at %(support_email)s."
 
 #: templates/zerver/emails/notify_new_login.html:40
 #: templates/zerver/emails/notify_new_login.txt:20
