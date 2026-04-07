@@ -2,21 +2,21 @@
     <p class="banner_message">
         {{#if (eq selected_propagate_mode "change_one")}}
             {{#tr}}
-                Message sender <z-user-names></z-user-names> is not subscribed to <z-stream></z-stream>.
+                메시지 작성자 <z-user-names></z-user-names>님은 <z-stream></z-stream> 채널을 구독하고 있지 않습니다.
                 {{#*inline "z-user-names"}}({{{unsubscribed_participant_formatted_names_list_html}}}){{/inline}}
                 {{#*inline "z-stream"}}<strong class="highlighted-element">{{> ../inline_decorated_channel_name stream=stream show_colored_icon=true}}</strong>{{/inline}}
             {{/tr}}
 
         {{else if few_unsubscribed_participants}}
             {{#tr}}
-                Some topic participants <z-user-names></z-user-names> are not subscribed to <z-stream></z-stream>.
+                주제 참여자 중 일부인 <z-user-names></z-user-names>님은 <z-stream></z-stream> 채널을 구독하고 있지 않습니다.
                 {{#*inline "z-user-names"}}({{{unsubscribed_participant_formatted_names_list_html}}}){{/inline}}
                 {{#*inline "z-stream"}}<strong class="highlighted-element">{{> ../inline_decorated_channel_name stream=stream show_colored_icon=true}}</strong>{{/inline}}
             {{/tr}}
 
         {{else}}
             {{#tr}}
-                {unsubscribed_participants_count} topic participants are not subscribed to <z-stream></z-stream>.
+                주제 참여자 {unsubscribed_participants_count}명이 <z-stream></z-stream> 채널을 구독하고 있지 않습니다.
                 {{#*inline "z-stream"}}<strong class="highlighted-element">{{> ../inline_decorated_channel_name stream=stream show_colored_icon=true}}</strong>{{/inline}}
             {{/tr}}
         {{/if}}
