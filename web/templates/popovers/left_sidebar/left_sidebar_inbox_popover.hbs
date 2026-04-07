@@ -5,7 +5,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" id="mark_all_messages_as_read" class="popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-mark-as-read" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Mark messages as read" }}</span>
+                <span class="popover-menu-label">{{t "메시지 읽음으로 표시" }}</span>
             </a>
         </li>
         {{/if}}
@@ -13,10 +13,10 @@
             <a role="menuitem" class="popover-menu-link toggle_display_unread_message_count" tabindex="0">
                 {{#if show_unread_count}}
                 <i class="popover-menu-icon zulip-icon zulip-icon-hide" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Hide unread counter" }}</span>
+                <span class="popover-menu-label">{{t "읽지 않은 메시지 개수 숨기기" }}</span>
                 {{else}}
                 <i class="popover-menu-icon zulip-icon zulip-icon-eye" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Show unread counter" }}</span>
+                <span class="popover-menu-label">{{t "읽지 않은 메시지 개수 표시하기" }}</span>
                 {{/if}}
             </a>
         </li>
@@ -26,7 +26,7 @@
                 <i class="popover-menu-icon zulip-icon zulip-icon-house" aria-hidden="true"></i>
                 <span class="popover-menu-label">
                     {{#tr}}
-                        Make <z-highlight>inbox</z-highlight> my home view
+                        <z-highlight>받은 메시지함</z-highlight>을 기본 화면으로 설정하기
                         {{#*inline "z-highlight"}}<b class="highlighted-element">{{> @partial-block}}</b>{{/inline}}
                     {{/tr}}
                 </span>
