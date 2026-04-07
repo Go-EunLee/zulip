@@ -1,7 +1,7 @@
 {{#> modal_banner . }}
     <p class="banner_message">
         {{#tr}}
-            Channel <z-link>#{stream_name}</z-link> created!
+            <z-link>#{stream_name}</z-link> 채널이 생성되었습니다!
             {{#*inline "z-link"}}<a class="stream_narrow_link" href="{{stream_url}}">{{> @partial-block}}</a>{{/inline}}
         {{/tr}}
     </p>
