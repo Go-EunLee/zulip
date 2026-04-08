@@ -2,7 +2,7 @@
     <div class="alert" id="dev-account-settings-status"></div>
     <div class="account-settings-form">
         <div id="user_details_section">
-            <h3 class="inline-block account-settings-heading">{{t "Account" }}</h3>
+            <h3 class="inline-block account-settings-heading">{{t "계정" }}</h3>
             <div class="alert-notification account-alert-notification" id="account-settings-status"></div>
             <form class="grid">
                 {{#if user_has_email_set}}
@@ -18,8 +18,8 @@
                           intent="neutral"
                           custom_classes="tippy-zulip-delayed-tooltip"
                           hidden=(not user_can_change_email)
-                          aria-label=(t "Change your email")
-                          data-tippy-content=(t "Change your email")
+                          aria-label=(t "이메일 주소 변경")
+                          data-tippy-content=(t "이메일 주소 변경")
                           }}
                     </div>
                     <div id="email-change-status"></div>
@@ -29,15 +29,15 @@
                 <div class="input-group">
                     <p>
                         {{#tr}}
-                            Add your email to <z-link-invite-users-help>invite other users</z-link-invite-users-help>
-                            or <z-link-convert-demo-organization-help>convert to a permanent Zulip organization</z-link-convert-demo-organization-help>.
+                            <z-link-invite-users-help>다른 사용자를 초대</z-link-invite-users-help>하거나 
+                            <z-link-convert-demo-organization-help>체험용 Zulip 조직을 정식 조직</z-link-convert-demo-organization-help>으로 전환하려면 이메일 주소를 추가하세요..
                             {{#*inline "z-link-invite-users-help"}}<a href="/help/invite-new-users" target="_blank" rel="noopener noreferrer">{{> @partial-block}}</a>{{/inline}}
                             {{#*inline "z-link-convert-demo-organization-help"}}<a href="/help/demo-organizations#convert-a-demo-organization-to-a-permanent-organization" target="_blank" rel="noopener noreferrer">{{> @partial-block}}</a>{{/inline}}
                         {{/tr}}
                     </p>
                     {{> ../components/action_button
                       id="demo_organization_add_email_button"
-                      label=(t "Add email")
+                      label=(t "이메일 추가")
                       attention="quiet"
                       intent="brand"
                       }}
@@ -47,18 +47,18 @@
 
             {{#if page_params.two_fa_enabled }}
             <p for="two_factor_auth" class="inline-block title">
-                {{t "Two factor authentication" }}: {{#if page_params.two_fa_enabled_user }}{{t "Enabled" }}{{else}}{{t "Disabled" }}{{/if}}
-                <a target="_blank" rel="noopener noreferrer" id="two_factor_auth" href="/account/two_factor/" title="{{t 'Set up two factor authentication' }}">[{{t "Setup" }}]</a>
+                {{t "2단계 인증" }}: {{#if page_params.two_fa_enabled_user }}{{t "사용" }}{{else}}{{t "사용 안 함" }}{{/if}}
+                <a target="_blank" rel="noopener noreferrer" id="two_factor_auth" href="/account/two_factor/" title="{{t '2단계 인증 설정' }}">[{{t "설정" }}]</a>
             </p>
             {{/if}}
 
             <form class="password-change-form grid">
                 {{#if user_can_change_password}}
                 <div>
-                    <label class="settings-field-label" for="change_password">{{t "Password" }}</label>
+                    <label class="settings-field-label" for="change_password">{{t "비밀번호" }}</label>
                     <div class="input-group">
                         {{> ../components/action_button
-                          label=(t "Change your password")
+                          label=(t "비밀번호 변경")
                           attention="quiet"
                           intent="neutral"
                           id="change_password"
@@ -71,7 +71,7 @@
             <div class="input-group deactivate-buttons-group">
                 <div id="deactivate_account_container" class="inline-block {{#if user_is_only_organization_owner}}disabled_setting_tooltip{{/if}}">
                     {{> ../components/action_button
-                      label=(t "Deactivate account")
+                      label=(t "계정 비활성화")
                       attention="quiet"
                       intent="danger"
                       id="user_deactivate_account_button"
@@ -80,7 +80,7 @@
                 </div>
                 {{#if owner_is_only_user_in_organization}}
                     {{> ../components/action_button
-                      label=(t "Deactivate organization")
+                      label=(t "조직 비활성화")
                       attention="quiet"
                       intent="danger"
                       custom_classes="deactivate_realm_button"
@@ -92,22 +92,20 @@
         {{> privacy_settings . for_realm_settings=false prefix="user_" read_receipts_help_icon_tooltip_text=send_read_receipts_tooltip hide_read_receipts_tooltip=realm.realm_enable_read_receipts}}
 
         <div id="api_key_button_box">
-            <h3>{{t "API key" }}</h3>
+            <h3>{{t "API 키" }}</h3>
 
             <div class="input-group">
                 <p class="api-key-note">
                     {{#tr}}
-                    An API key can be used to programmatically access a Zulip account.
-                    Anyone with access to your API key has the ability to read your messages, send
-                    messages on your behalf, and otherwise impersonate you on Zulip, so you should
-                    guard your API key as carefully as you guard your password. <br />
-                    We recommend creating bots and using the bots' accounts and API keys to access
-                    the Zulip API, unless the task requires access to your account.
+                    API 키를 사용하면 프로그램으로 Zulip 계정에 접근할 수 있습니다. 
+                    API 키를 가진 사람은 내 메시지를 읽거나, 내 대신 메시지를 보내거나, 
+                    Zulip에서 나인 것처럼 행동할 수 있으므로 비밀번호만큼 주의해서 관리해야 합니다. <br />
+                    내 계정에 직접 접근해야 하는 작업이 아니라면, 봇을 만들어 그 봇의 계정과 API 키로 Zulip API를 사용하는 것을 권장합니다.
                     {{/tr}}
                 </p>
                 <div id="api_key_button_container" class="inline-block {{#unless user_has_email_set}}disabled_setting_tooltip{{/unless}}">
                     {{> ../components/action_button
-                      label=(t "Manage your API key")
+                      label=(t "API 키 관리")
                       attention="quiet"
                       intent="neutral"
                       id="api_key_button"

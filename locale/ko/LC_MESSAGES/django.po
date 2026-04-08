@@ -7578,7 +7578,7 @@ msgstr "You're making too many attempts! Try again 에서 {seconds} seconds."
 
 #: zerver/views/user_settings.py:392
 msgid "New password is too weak!"
-msgstr "New 비밀번호 is too weak!"
+msgstr "새로운 비밀번호가 보안이 너무 취약합니다!"
 
 #: zerver/views/user_settings.py:448
 msgid "You must upload exactly one avatar."
@@ -7586,29 +7586,30 @@ msgstr "정확히 하나의 아바타를 업로드해야합니다."
 
 #: zerver/views/user_topics.py:52
 msgid "Topic is not muted"
-msgstr "주제가 뮤트되어 있지 않습니다"
+msgstr "주제가 알림이 활성화 되어 있지 않습니다"
 
 #: zerver/views/users.py:130
 msgid "Cannot deactivate the only organization owner"
-msgstr "Cannot 비활성화 the only 조직 owner"
+msgstr "유일한 조직 소유자를 비활성화할 수 없습니다."
 
 #: zerver/views/users.py:269
 msgid "User not authorized to change user emails"
-msgstr "사용자 not authorized 으로 change 사용자 emails"
+msgstr "사용자가 사용자 이메일을 변경할 권한이 없습니다."
 
 #: zerver/views/users.py:283
 msgid ""
 "The owner permission cannot be removed from the only organization owner."
-msgstr "The owner permission cannot be removed from the only 조직 owner."
+msgstr ""
+"유일한 조직 소유자의 소유자 권한은 제거할 수 없습니다."
 
 #: zerver/views/users.py:325
 msgid "Invalid new email address."
-msgstr "Invalid new 이메일 주소."
+msgstr "잘못된 새 이메일 주소."
 
 #: zerver/views/users.py:334
 #, python-brace-format
 msgid "New email value error: {message}"
-msgstr "New 이메일 value error: {message}"
+msgstr "새로운 이메일 값 오류: {message}"
 
 #: zerver/views/users.py:473
 msgid "Failed to change owner, no such user"
@@ -7626,7 +7627,9 @@ msgstr "소유자를 변경하지 못했습니다. 봇은 다른 봇을 소유�
 msgid ""
 "Can't create bots until FAKE_EMAIL_DOMAIN is correctly configured.\n"
 "Please contact your server administrator."
-msgstr "Can't create bots until FAKE_EMAIL_DOMAIN is correctly configured.\nPlease contact 귀하의 서버 administrator."
+msgstr ""
+"FAKE_EMAIL_DOMAIN이 올바르게 구성될 때까지 봇을 만들 수 없습니다.\n"
+"서버 관리자에게 문의하세요."
 
 #: zerver/views/users.py:603
 msgid "Embedded bots are not enabled."
@@ -7638,12 +7641,12 @@ msgstr "포함된 봇 이름이 유효하지 않습니다."
 
 #: zerver/views/users.py:830
 msgid "User not authorized to create users"
-msgstr "사용자 not authorized 으로 create 사용자"
+msgstr "사용자를 생성할 권한이 없는 사용자"
 
 #: zerver/views/users.py:847
 #, python-brace-format
 msgid "Email '{email}' not allowed in this organization"
-msgstr "이메일 '{email}' not allowed 에서 this 조직"
+msgstr "이 조직에서는 '{email}' 이메일이 허용되지 않습니다"
 
 #: zerver/views/users.py:852
 msgid "Disposable email addresses are not allowed in this organization"
@@ -7651,15 +7654,15 @@ msgstr "여기서는 1회용 이메일 주소는 사용하실 수 없습니다."
 
 #: zerver/views/video_calls.py:54
 msgid "Invalid Zoom access token"
-msgstr "Invalid Zoom access token"
+msgstr "잘못된 Zoom 액세스 토큰"
 
 #: zerver/views/video_calls.py:61
 msgid "Unknown Zoom user email"
-msgstr "Unknown Zoom 사용자 이메일"
+msgstr "알 수 없는 Zoom 사용자 이메일"
 
 #: zerver/views/video_calls.py:66 zerver/views/video_calls.py:205
 msgid "Zoom credentials have not been configured"
-msgstr "Zoom credentials have not been configured"
+msgstr "Zoom 자격 증명이 구성되지 않았습니다."
 
 #: zerver/views/video_calls.py:159
 msgid "Invalid Zoom session identifier"

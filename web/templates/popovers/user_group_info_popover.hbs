@@ -20,7 +20,7 @@
         {{/if}}
         {{#if deactivated}}
             <li role="none" class="popover-menu-list-item text-item italic hidden-for-spectators">
-                <span class="popover-menu-label">{{t "This group has been deactivated." }}</span>
+                <span class="popover-menu-label">{{t "이 그룹은 비활성화되었습니다." }}</span>
             </li>
         {{/if}}
         <li role="separator" class="popover-menu-separator"></li>
@@ -55,12 +55,12 @@
                                         {{/tr}}
                                     {{else}}
                                         <a href="#organization/users" role="menuitem">
-                                            {{t "View all users"}}
+                                            {{t "전체 사용자 보기"}}
                                         </a>
                                     {{/if}}
                                 {{else}}
                                     <a href="{{group_members_url}}" role="menuitem">
-                                        {{t "View all members"}}
+                                        {{t "전체 구성원 보기"}}
                                     </a>
                                 {{/if}}
                             </span>
@@ -68,7 +68,7 @@
                     {{/unless}}
                 </ul>
             {{else}}
-                <span class="popover-group-menu-placeholder"><i>{{t 'This group has no members.'}}</i></span>
+                <span class="popover-group-menu-placeholder"><i>{{t '이 그룹에는 구성원이 없습니다.'}}</i></span>
             {{/if}}
         </li>
         {{#unless (or is_guest is_system_group)}}
@@ -76,7 +76,7 @@
             <li role="none" class="link-item popover-menu-list-item hidden-for-spectators">
                 <a href="{{group_edit_url}}" role="menuitem" class="navigate-link-on-enter popover-menu-link" tabindex="0">
                     <i class="popover-menu-icon zulip-icon zulip-icon-user-group-cog" aria-hidden="true"></i>
-                    <span class="popover-menu-label">{{t "Group settings" }}</span>
+                    <span class="popover-menu-label">{{t "그룹 설정" }}</span>
                 </a>
             </li>
         {{/unless}}

@@ -5,14 +5,14 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="respond_button popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-quote-message" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Quote message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 인용" }}</span>
                 {{popover_hotkey_hints ">"}}
             </a>
         </li>
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="forward_button popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-forward-message" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Forward message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 전달" }}</span>
                 {{popover_hotkey_hints "<"}}
             </a>
         </li>
@@ -43,7 +43,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="delete_message popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-trash" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Delete message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 삭제" }}</span>
             </a>
         </li>
         {{/if}}
@@ -53,7 +53,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="reaction_button popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-smile" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Add emoji reaction" }}</span>
+                <span class="popover-menu-label">{{t "이모지 반응 추가" }}</span>
                 {{popover_hotkey_hints ":"}}
             </a>
         </li>
@@ -66,7 +66,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="mark_as_unread popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-mark-as-unread" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Mark as unread from here" }}</span>
+                <span class="popover-menu-label">{{t "여기부터 읽지 않음으로 표시" }}</span>
                 {{popover_hotkey_hints "Shift" "U"}}
             </a>
         </li>
@@ -75,7 +75,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="message-reminder popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-alarm-clock" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Remind me about this" }}</span>
+                <span class="popover-menu-label">{{t "이 내용을 다시 알려주기" }}</span>
             </a>
         </li>
         {{/if}}
@@ -83,7 +83,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="rehide_muted_user_message popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-hide" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Hide muted message again" }}</span>
+                <span class="popover-menu-label">{{t "알림 끈 메시지 다시 숨기기" }}</span>
             </a>
         </li>
         {{/if}}
@@ -91,7 +91,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="popover_toggle_collapse popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-collapse" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Collapse message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 접기" }}</span>
                 {{popover_hotkey_hints "-"}}
             </a>
         </li>
@@ -100,7 +100,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="popover_toggle_collapse popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-expand" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Expand message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 펼치기" }}</span>
                 {{popover_hotkey_hints "-"}}
             </a>
         </li>
@@ -120,7 +120,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" data-message-id="{{message_id}}" class="view_read_receipts popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-readreceipts" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "View read receipts" }}</span>
+                <span class="popover-menu-label">{{t "읽음 확인 보기" }}</span>
                 {{popover_hotkey_hints "Shift" "V"}}
             </a>
         </li>
@@ -128,7 +128,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" class="copy_link navigate-link-on-enter popover-menu-link" data-message-id="{{message_id}}" data-clipboard-text="{{ conversation_time_url }}" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-link-alt" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Copy link to message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 링크 복사" }}</span>
             </a>
         </li>
     </ul>

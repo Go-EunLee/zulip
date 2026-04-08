@@ -1,14 +1,14 @@
 <div class="add_members_container add-button-container">
     <div class="pill-container person_picker">
         <div class="input" contenteditable="true"
-          data-placeholder="{{t 'Add users or groups. Use #channelname to add all subscribers.' }}">
+          data-placeholder="{{t '사용자 또는 그룹을 추가합니다. 모든 구독자를 추가하려면 #channelname을 사용하세요.' }}">
             {{~! Squash whitespace so that placeholder is displayed when empty. ~}}
         </div>
     </div>
     {{#if (not hide_add_button)}}
         <div class="add_member_button_wrapper add-users-button-wrapper inline-block">
             {{> ../components/action_button
-              label=(t "Add")
+              label=(t "추가")
               custom_classes="add-member-button add-users-button"
               id="add_member"
               attention="quiet"
@@ -26,10 +26,10 @@
 </div>
 <div class="add-members-subtitle">
     {{#tr}}
-        You can add members by name or email address.
-        Enter a <z-user-roles-link>user role</z-user-roles-link>,
-        <z-user-groups-link>user group</z-user-groups-link>,
-        or <z-channel-link>#channel</z-channel-link> to add multiple users at once.
+        이름이나 이메일 주소로 회원을 추가할 수 있습니다.
+        <z-user-roles-link>사용자 역할</z-user-roles-link>,
+        <z-user-groups-link>사용자 그룹</z-user-groups-link>,
+        <z-channel-link>#channel</z-channel-link> 를 입력하면 여러 사용자를 한 번에 추가할 수 있습니다.
         {{#*inline "z-user-roles-link"}}<a href="/help/user-roles" target="_blank" rel="noopener noreferrer">{{> @partial-block}}</a>{{/inline}}
         {{#*inline "z-user-groups-link"}}<a href="/help/user-groups" target="_blank" rel="noopener noreferrer">{{> @partial-block}}</a>{{/inline}}
         {{#*inline "z-channel-link"}}<a href="/help/introduction-to-channels" target="_blank" rel="noopener noreferrer">{{> @partial-block}}</a>{{/inline}}

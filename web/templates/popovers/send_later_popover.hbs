@@ -7,13 +7,13 @@
                     <div class="enter_sends_choice_text_container">
                         <span class="enter_sends_major enter_sends_choice_text">
                             {{#tr}}
-                                Press <z-shortcut></z-shortcut> to send
+                                <z-shortcut></z-shortcut> 키를 누르면 전송됩니다
                                 {{#*inline "z-shortcut"}}{{popover_hotkey_hints "Enter"}}{{/inline}}
                             {{/tr}}
                         </span>
                         <span class="enter_sends_minor enter_sends_choice_text">
                             {{#tr}}
-                                Press <z-shortcut></z-shortcut> to add a new line
+                                <z-shortcut></z-shortcut> 키를 누르면 줄이 바뀝니다
                                 {{#*inline "z-shortcut"}}{{popover_hotkey_hints "Ctrl" "Enter"}}{{/inline}}
                             {{/tr}}
                         </span>
@@ -24,13 +24,13 @@
                     <div class="enter_sends_choice_text_container">
                         <span class="enter_sends_major enter_sends_choice_text">
                             {{#tr}}
-                                Press <z-shortcut></z-shortcut> to send
+                                <z-shortcut></z-shortcut> 키를 누르면 전송됩니다
                                 {{#*inline "z-shortcut"}}{{popover_hotkey_hints "Ctrl" "Enter"}}{{/inline}}
                             {{/tr}}
                         </span>
                         <span class="enter_sends_minor enter_sends_choice_text">
                             {{#tr}}
-                                Press <z-shortcut></z-shortcut> to add a new line
+                                <z-shortcut></z-shortcut> 키를 누르면 줄이 바뀝니다
                                 {{#*inline "z-shortcut"}}{{popover_hotkey_hints "Enter"}}{{/inline}}
                             {{/tr}}
                         </span>
@@ -42,28 +42,28 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" class="open_send_later_modal popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-calendar" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Schedule message" }}</span>
+                <span class="popover-menu-label">{{t "메시지 예약" }}</span>
             </a>
         </li>
         {{#if formatted_send_later_time}}
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" class="send_later_selected_send_later_time popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-calendar-clock" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t 'Schedule for {formatted_send_later_time}' }}</span>
+                <span class="popover-menu-label">{{t '{formatted_send_later_time}에 보내기' }}</span>
             </a>
         </li>
         {{/if}}
         <li role="none" class="link-item popover-menu-list-item">
             <a href="#scheduled" role="menuitem" class="navigate-link-on-enter popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-calendar-days" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "View scheduled messages" }}</span>
+                <span class="popover-menu-label">{{t "예약한 메시지 보기" }}</span>
             </a>
         </li>
         <li role="separator" class="popover-menu-separator drafts-item-in-popover"></li>
         <li role="none" class="link-item popover-menu-list-item drafts-item-in-popover">
             <a href="#drafts" role="menuitem" class="view_contextual_drafts popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-drafts" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "View drafts" }}</span>
+                <span class="popover-menu-label">{{t "임시 저장한 메시지 보기" }}</span>
                 <span class="compose-drafts-count-container"><span class="unread_count quiet-count compose-drafts-count"></span></span>
             </a>
         </li>
@@ -72,7 +72,7 @@
         <li role="none" class="link-item popover-menu-list-item">
             <a role="menuitem" class="compose_new_message popover-menu-link" tabindex="0">
                 <i class="popover-menu-icon zulip-icon zulip-icon-file-check" aria-hidden="true"></i>
-                <span class="popover-menu-label">{{t "Save draft and start a new message" }}</span>
+                <span class="popover-menu-label">{{t " 임시 저장하고 새 메시지 작성" }}</span>
             </a>
         </li>
         {{/if}}
