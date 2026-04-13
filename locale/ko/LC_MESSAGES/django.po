@@ -3650,12 +3650,13 @@ msgstr "%(identity_provider)s와 로그인"
 #, fuzzy
 #| msgid "Already has an account."
 msgid "Don't have an account?"
-msgstr "이미 계정이 있습니다."
+msgstr "계정이 없나요?"
 
 #: templates/zerver/login.html:167
 msgid ""
 "Don't have an account yet? You need to be invited to join this organization."
-msgstr "Don't have an 계정 yet? You need 으로 be invited 으로 join this 조직."
+msgstr ""
+"아직 계정이 없나요? 이 조직에 가입하려면 초대를 받아야 합니다."
 
 #: templates/zerver/new_user_email_address_visibility.html:5
 msgid ""
@@ -4824,28 +4825,32 @@ msgstr "새로운 비밀번호"
 
 #: zerver/forms.py:444
 msgid "New password confirmation"
-msgstr "New 비밀번호 confirmation"
+msgstr "새로운 비밀번호 확인"
 
 #: zerver/forms.py:586
 #, python-brace-format
 msgid ""
 "You're making too many attempts to sign in. Try again in {seconds} seconds "
 "or contact your organization administrator for help."
-msgstr "You're making too many attempts 으로 sign in. Try again 에서 {seconds} seconds or contact 귀하의 조직 administrator 에 대한 help."
+msgstr ""
+"로그인을 너무 많이 시도하고 있습니다." 
+"{seconds}초 후에 다시 시도하거나 조직 관리자에게 도움을 요청하세요."
 
 #: zerver/forms.py:598
 msgid ""
 "Your password has been disabled because it is too weak. Reset your password "
 "to create a new one."
-msgstr "Your 비밀번호 has been disabled because it is too weak. 재설정 귀하의 비밀번호 으로 create a new one."
+msgstr ""
+"귀하의 비밀번호는 너무 취약하여 비활성화되었습니다." 
+"새로운 비밀번호를 만들려면 비밀번호를 재설정하세요."
 
 #: zerver/forms.py:646
 msgid "Token"
-msgstr "흔적"
+msgstr "토큰"
 
 #: zerver/forms.py:669
 msgid "Tip: You can enter multiple email addresses with commas between them."
-msgstr "Tip: You can enter multiple 이메일 addresses 와(과) 함께 commas between them."
+msgstr "팁: 이메일 주소 사이에 쉼표를 넣어 여러 이메일 주소를 입력할 수 있습니다."
 
 #: zerver/forms.py:675
 msgid "Please enter at most 10 emails."
@@ -4853,12 +4858,12 @@ msgstr "최대 10개의 이메일을 입력하십시오."
 
 #: zerver/forms.py:688
 msgid "We couldn't find that Zulip organization."
-msgstr "We couldn't find that Zulip 조직."
+msgstr "해당 Zulip 조직을 찾을 수 없습니다."
 
 #: zerver/lib/addressee.py:25
 #, python-brace-format
 msgid "Invalid email '{email}'"
-msgstr "Invalid 이메일 '{email}'"
+msgstr "잘못된 이메일 '{email}'"
 
 #: zerver/lib/addressee.py:64 zerver/lib/addressee.py:138
 #: zerver/views/typing.py:50
@@ -4867,11 +4872,11 @@ msgstr "누락된 주제"
 
 #: zerver/lib/addressee.py:123
 msgid "Cannot send to multiple channels"
-msgstr "Cannot send 으로 multiple 채널"
+msgstr "여러 채널로 보낼 수 없습니다"
 
 #: zerver/lib/addressee.py:135
 msgid "Missing channel"
-msgstr "Missing 채널"
+msgstr "누락된 채널"
 
 #: zerver/lib/addressee.py:146
 msgid "Message must have recipients"
@@ -4888,12 +4893,12 @@ msgstr "유효하지 않은 첨부 파일"
 #: zerver/lib/attachments.py:50
 msgid ""
 "An error occurred while deleting the attachment. Please try again later."
-msgstr "An error occurred while deleting the attachment. Please try again later."
+msgstr ""
 "첨부 파일을 삭제하는 중 오류가 발생했습니다. 나중에 다시 시도 해주십시오."
 
 #: zerver/lib/bot_lib.py:107
 msgid "Message must have recipients!"
-msgstr "메시지 must have recipients!"
+msgstr "메시지에는 수신자가 있어야 합니다.!"
 
 #: zerver/lib/channel_folders.py:26
 #, fuzzy
@@ -4904,11 +4909,11 @@ msgstr "내용은 비워 둘 수 없습니다."
 #: zerver/lib/channel_folders.py:31
 #, python-brace-format
 msgid "Invalid character in channel folder name, at position {position}."
-msgstr "Invalid character 에서 채널 folder name, at position {position}."
+msgstr "{position} 위치의 채널 폴더 이름에 잘못된 문자가 있습니다."
 
 #: zerver/lib/channel_folders.py:37
 msgid "Channel folder name already in use"
-msgstr "채널 folder name already 에서 use"
+msgstr "이미 사용 중인 채널 폴더 이름"
 
 #: zerver/lib/channel_folders.py:76
 msgid "Invalid channel folder ID"
