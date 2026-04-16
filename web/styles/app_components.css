@@ -1037,6 +1037,7 @@ input.settings_text_input {
             border-radius: 0 0 7px 7px;
             border: 1px solid var(--color-message-list-border);
             border-top: 0;
+            margin-bottom: 10px;
         }
 
         .messagebox-content {
@@ -1062,6 +1063,7 @@ input.settings_text_input {
             cursor: auto;
             box-shadow: none;
             border-radius: 0 0 7px 7px;
+            padding: 10px 12px;
         }
 
         .overlay_message_controls {
